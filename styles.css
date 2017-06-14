@@ -1,7 +1,29 @@
-.landing-section{
-	height: 90vh;
+
+.section{
+	min-height: 90vh;
 }
+
+
+
+/*overriding Materialize*/
 
 .brand-logo{
 	margin-left: 16px;
+}
+
+nav ul a:hover{
+	background-color: rgba(250, 250, 250, 0.5);
+}
+
+
+
+
+/*Utility Classes*/
+
+.light-heading{
+	color: #fafafa;
+}
+
+.dark-heading{
+	color: #212121;
 }
