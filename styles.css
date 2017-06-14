@@ -29,8 +29,10 @@ ul li a{
 
 .light-heading{
 	color: #fafafa;
+	font-family: 'Josefin Sans', sans-serif;	
 }
 
 .dark-heading{
 	color: #212121;
+	font-family: 'Josefin Sans', sans-serif;
 }
