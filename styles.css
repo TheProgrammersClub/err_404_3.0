@@ -52,3 +52,11 @@ ul li a{
 	max-width: 150px;
 	max-height: 150px;
 }
+
+#domains-section .col{
+	padding-bottom: 20px;
+}
+
+.col p{
+	text-align: justify;
+}
