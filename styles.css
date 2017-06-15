@@ -36,3 +36,10 @@ ul li a{
 	color: #212121;
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+.container-fluid{
+	background-image: url(assets/side_gfx.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
