@@ -1,6 +1,6 @@
 .background
 {
-  background: #212121
+  background: #fafafa
 }
 
 *,
@@ -24,14 +24,17 @@
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #fff;
+  background: #121212;
+  border-radius: 10px;
+  margin-bottom: -2px;
 }
+
 
 .timeline ul li::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 35;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -44,13 +47,13 @@
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #FFAB40;
+  background: #1de9b6;
 }
 
 .timeline ul li div::before {
   content: '';
   position: absolute;
-  bottom: 7px;
+  bottom: 50%;
   width: 0;
   height: 0;
   border-style: solid;
@@ -63,7 +66,7 @@
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #FFAB40 transparent transparent;
+  border-color: transparent #1de9b6 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -73,7 +76,7 @@
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #FFAB40;
+  border-color: transparent transparent transparent #1de9b6;
 }
 
 time {
@@ -92,7 +95,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #FFAB40;
+  background: #1de9b6;
 }
 
 .timeline ul li div {
@@ -141,6 +144,10 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #FFAB40 transparent transparent;
+    border-color: transparent #1de9b6 transparent transparent;
   }
+}
+
+.time-font{
+  border-radius: 5px;
 }
