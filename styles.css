@@ -13,6 +13,7 @@
 	margin-left: 16px;
 }
 
+
 nav ul a:hover{
 	background-color: rgba(250, 250, 250, 0.1);
 }
@@ -51,4 +52,24 @@ ul li a{
 .domain_icon{
 	max-width: 150px;
 	max-height: 150px;
+}
+
+input[type=text]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]){
+	border-bottom: 1px solid #1de9b6;
+	box-shadow: 0 1px 0 0 #1de9b6;
+
+}
+
+input[type=text]:focus:not([readonly])+label,
+input[type=tel]:focus:not([readonly])+label{
+	color: #1de9b6;
+}
+
+.input-field .prefix.active{
+	color: #1de9b6;
+}
+
+ul li a.active{
+	color: #1de9b6;
 }
