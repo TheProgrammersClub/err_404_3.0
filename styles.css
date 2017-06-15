@@ -47,3 +47,8 @@ ul li a{
     background-size: contain;
     background-blend-mode: luminosity;
 }
+
+.domain_icon{
+	max-width: 150px;
+	max-height: 150px;
+}
