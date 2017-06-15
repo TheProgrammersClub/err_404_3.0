@@ -43,6 +43,7 @@ ul li a{
 
 .time-font{
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
 }
 .side-gfx{
 	background-image: url(assets/side_gfx.png);
