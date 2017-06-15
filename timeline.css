@@ -34,7 +34,7 @@
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 35;
+  bottom: 35px;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
