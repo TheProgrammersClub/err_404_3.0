@@ -24,7 +24,10 @@ ul li a{
 .side-nav-header{
 	padding: 30px;
 }
-
+.li-item{
+	list-style-type: circle;
+	color: white;
+}
 /*Utility Classes*/
 
 .light-heading{
@@ -35,4 +38,17 @@ ul li a{
 .dark-heading{
 	color: #212121;
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+.side-gfx{
+	background-image: url(assets/side_gfx.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-blend-mode: luminosity;
+}
+
+.domain_icon{
+	max-width: 150px;
+	max-height: 150px;
 }
