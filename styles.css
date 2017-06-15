@@ -41,6 +41,9 @@ ul li a{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+.time-font{
+	font-family: 'Josefin Sans', sans-serif;
+}
 .side-gfx{
 	background-image: url(assets/side_gfx.png);
     background-repeat: no-repeat;
