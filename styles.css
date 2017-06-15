@@ -73,3 +73,11 @@ input[type=tel]:focus:not([readonly])+label{
 ul li a.active{
 	color: #1de9b6;
 }
+
+#domains-section .col{
+	padding-bottom: 20px;
+}
+
+.col p{
+	text-align: justify;
+}
