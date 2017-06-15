@@ -42,4 +42,5 @@ ul li a{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    background-blend-mode: luminosity;
 }
