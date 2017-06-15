@@ -24,7 +24,10 @@ ul li a{
 .side-nav-header{
 	padding: 30px;
 }
-
+.li-item{
+	list-style-type: circle;
+	color: white;
+}
 /*Utility Classes*/
 
 .light-heading{
