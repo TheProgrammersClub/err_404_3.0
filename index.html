@@ -92,25 +92,57 @@
 
 		<div class="container row center">
 
-			<h2 class="center dark-heading">Prizes</h2>
-			
-			<h4 class='center'>Total prizes worth ₹30,000</h4>
-			
-			<h4 class='center'>Special prize for Girl Programmers</h4>
+			<h2 class="center dark-heading">Prizes</h2><br>
 
-			<div class="trophy-container">
-				<div class="trophy"></div>
-				<div class="trophy-badge"></div>
+			<div class="col s12 m6 l6">
+				<div class="trophy-container">
+					<div class="trophy"></div>
+					<div class="trophy-badge"></div>
+				</div>
+				
+				<h4 class='center dark-heading'>Prize worth ₹30,000</h4>
+				
 			</div>
-			
-			
+
+			<div class="col s12 m6 l6">
+				<div class="trophy-container">
+					<div class="trophy"></div>
+					<div class="trophy-badge"></div>
+				</div>
+				
+				<h4 class='center dark-heading'>Special Prizes for Female Hackers</h4>
+				
+			</div>			
+			<br><br>
+			<h4 class='center dark-heading'>Goodies and Honourable Mentions for the rest of the hackers</h4>
 		</div>
 	</div>
 
 	<!-- Venue -->
 	<div id="venue-section" class="container-fluid section grey darken-4 scrollspy side-gfx">
 		<div class="container">
-			<h2 class="center light-heading ">Venue</h2>
+			<h2 class="center light-heading">Venue</h2><br><br>
+
+			<div class="row valign-wrapper">
+
+				<div class="col s12 m6 l6">
+
+					<iframe
+						width="600"
+						height="450"
+						frameborder="0" style="border:0"
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANa6feUuEJv5w8Erl1ah6wj5RmjZBH6xk&q=M.H.Saboo+Siddik+Technical+High+School,+8,+M.h.+Saboo+Siddiq+Polytechnic+Road,+Nagpada,+Mazgaon,+Mumbai,+Maharashtra+400008" allowfullscreen>
+					</iframe>
+
+				</div>
+
+				<div class="col s12 m6 l6">
+					<h3 class="light-heading">M.H. Saboo Siddik College of Engineering</h3>
+					<p class="light-heading flow-text">8, Saboo Siddik Polytechnic Road, New Nagpada, Byculla, Mumbai, Maharashtra 400008, India</p>
+				</div>
+
+			</div>
+
 		</div>
 	</div>
 
@@ -234,8 +266,8 @@
 				<div class="row">
 					<div class="input-field col l6 m8 s12 offset-l3 offset-m2">
 						<i class="material-icons prefix">account_circle</i>
-						<input id="first_name" type="text" class="validate">
-						<label for="first_name">Full Name</label>
+						<input id="name" type="text" class="validate">
+						<label for="name">Full Name</label>
 					</div>
 				</div>
 				<div class="row">
@@ -253,7 +285,7 @@
 					</div>
 				</div>
 				<div class="row center">
-					<a class="btn waves-effect waves-teal grey darken-4 " href="#">SUBMIT</a>	
+					<div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="submitData()">SUBMIT</div>	
 				</div>
 
 			</form>
@@ -353,42 +385,42 @@
 				<h2 class="center dark-heading">FAQ's</h2><br>
 				<div class="col l3 hide-on-med-and-down"></div>
 
-				<ul class="collapsible col l6" data-collapsible="accordion">
+				<ul class="collapsible col l10" data-collapsible="accordion">
 					<li>
-						<div class="collapsible-header active">
+						<div class="collapsible-header flow-text active">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span> </span>  Who can participate?
 						</div>
-						<div class="collapsible-body"><span>Anyone with a knack of programming and solving problems can participate.</span></div>
+						<div class="collapsible-body"><span class="flow-text">Anyone with a knack of programming and solving problems can participate.</span></div>
 					</li>
 					<li>
-						<div class="collapsible-header">
+						<div class="collapsible-header flow-text">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span></span> How much does it cost?
 						</div>
-						<div class="collapsible-body"><span>Thanks to our college, attendance is completely free. We will also provide you with WiFi, dinner and a workspace.</span></div>
+						<div class="collapsible-body"><span class="flow-text">Thanks to our college, attendance is completely free. We will also provide you with WiFi, dinner and a workspace.</span></div>
 					</li>
 					<li>
-						<div class="collapsible-header">
+						<div class="collapsible-header flow-text">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span></span> What should I bring?
 						</div>
-						<div class="collapsible-body"><span>Bring your laptop,charger and other gadgets suitable to your project and a will to code. Please bring a valid ID for admission.</span></div>
+						<div class="collapsible-body"><span class="flow-text">Bring your laptop,charger and other gadgets suitable to your project and a will to code. Please bring a valid ID for admission.</span></div>
 					</li>
 					<li>
-						<div class="collapsible-header">
+						<div class="collapsible-header flow-text">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span></span> Where is it?
 						</div>
-						<div class="collapsible-body"><span>M.H.Saboo Siddik College of Engineering, Byculla is happy to provide space in their campus to organize the Hackathon. You can find the directions in the Venue section.</span></div>
+						<div class="collapsible-body"><span class="flow-text">M.H.Saboo Siddik College of Engineering, Byculla is happy to provide space in their campus to organize the Hackathon. You can find the directions in the Venue section.</span></div>
 					</li>
 					<li>
-						<div class="collapsible-header">
+						<div class="collapsible-header flow-text">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span></span> Where will I sleep?
 						</div>
-						<div class="collapsible-body"><span>We have sleeping area with matresses and pillows. You can bring along sleeping bags & other stuffs</span></div>
+						<div class="collapsible-body"><span class="flow-text">We have sleeping area with matresses and pillows. You can bring along sleeping bags & other stuffs</span></div>
 					</li>
 					<li>
-						<div class="collapsible-header">
+						<div class="collapsible-header flow-text">
 							<span class="cross-box"><span class="rotating-span"></span><span class="horizontal-span"></span></span> I don't have a team );
 						</div>
-						<div class="collapsible-body"><span>Don't worry! Part of the fun of a hackathon is meeting new people. We will have time at the beginning of the event to socialize and form teams.</span></div>
+						<div class="collapsible-body"><span class="flow-text">Don't worry! Part of the fun of a hackathon is meeting new people. We will have time at the beginning of the event to socialize and form teams.</span></div>
 					</li>
 				</ul>
 
@@ -436,6 +468,8 @@
 	crossorigin="anonymous"></script>
 	<!-- Materialize JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- Firebase JS -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 	<!-- Custom JS -->
 	<script src="scripts.js"></script>
 
