@@ -266,8 +266,8 @@
 				<div class="row">
 					<div class="input-field col l6 m8 s12 offset-l3 offset-m2">
 						<i class="material-icons prefix">account_circle</i>
-						<input id="first_name" type="text" class="validate">
-						<label for="first_name">Full Name</label>
+						<input id="name" type="text" class="validate">
+						<label for="name">Full Name</label>
 					</div>
 				</div>
 				<div class="row">
@@ -285,7 +285,7 @@
 					</div>
 				</div>
 				<div class="row center">
-					<a class="btn waves-effect waves-teal grey darken-4 " href="#">SUBMIT</a>	
+					<div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="submitData()">SUBMIT</div>	
 				</div>
 
 			</form>
@@ -468,6 +468,8 @@
 	crossorigin="anonymous"></script>
 	<!-- Materialize JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- Firebase JS -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 	<!-- Custom JS -->
 	<script src="scripts.js"></script>
 
