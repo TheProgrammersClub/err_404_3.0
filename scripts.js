@@ -6,3 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		scrollOffset:60
 	});
 })
+
+
+$(document).ready(function(){
+    $('.modal').modal();
+});
