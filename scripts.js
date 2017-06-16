@@ -80,7 +80,7 @@ function submitData(){
 
 	var date = new Date();
 
-	if (s_t_name != "") {
+	if (s_t_name != "" && s_name != "" && s_contact != "" && s_college != "") {
 
 		database.ref('registration/' + date.getTime()).set({
 			team_name: s_t_name,
@@ -97,4 +97,13 @@ function submitData(){
 		console.log("empty");
 		Materialize.toast('Please enter the details', 2000);
 	}
+}
+
+
+function loadProgress() {		
+
+	setTimeout(function(){ 
+		document.getElementById('loader').style.display = "none";
+		document.getElementById('main').style.display = "block";	
+	 }, 1500);
 }

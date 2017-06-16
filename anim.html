@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.anim{			
+		    width: 500px;
+		    height: 500px;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-image: url(assets/dino_frame_1.png);
+		    animation: animate 0.2s infinite;
+		}
+
+		@keyframes animate{
+			from{
+				background-image: url(assets/dino_frame_1.png);
+			}
+			to{
+				background-image: url(assets/dino_frame_2.png);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="anim"></div>
+
+</body>
+</html>
