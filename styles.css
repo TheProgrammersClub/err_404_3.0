@@ -136,7 +136,6 @@ ul li a.active{
 	width:15px;
 	height: 2px;
 	background: black;
-	
 }
 
 .horizontal-span{
@@ -185,4 +184,19 @@ ul li a.active{
 
 .badge-visible{
 	transform: translateY(-50%) scale(1);
+}
+
+
+.sponsors-logo-div{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #1de9b6;
+	padding: 10px;
+	background-color: #fafafa;
+}
+
+.sponsors-img{
+	width: 100px;
+	/*max-width: 100px;*/
 }
