@@ -50,3 +50,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", handleScroll);
 	
 })
+
+var API_KEY = "AIzaSyAdxLTk0P8D6iDyNtgc2NPBxfByz94d6XU";

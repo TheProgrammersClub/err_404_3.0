@@ -52,7 +52,7 @@ ul li a{
 }
 
 
-.domain_icon{
+.domain_icon{	
 	max-width: 150px;
 	max-height: 150px;
 }
@@ -177,8 +177,8 @@ ul li a.active{
 	top: 40%;
 	left: 0px;
 	transform: translateY(-50%) scale(0);
-	transition: all 600ms cubic-bezier(0.4, 0.0, 0.2, 1);
-	filter: drop-shadow( 0 10px 15px rgba(11,27,38, 0.3));
+	transition: all 800ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	/*filter: drop-shadow( 0 10px 15px rgba(11,27,38, 0.3));*/
 
 	width: 120px;
 	height: 172.5px;
