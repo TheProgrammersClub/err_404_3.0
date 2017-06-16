@@ -241,17 +241,34 @@ ul li a.active{
 	/*max-width: 100px;*/
 }
 
-
 .side-gfx{
+	position: relative;
+}
+
+.side-gfx::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+    background-position: 95vw 0px;
 	background-image: url(assets/side_gfx.png);
     background-repeat: no-repeat;
-    background-position: 95vw 0px;
     background-size: contain;
-    background-blend-mode: luminosity;
+    filter: grayscale(100%);
     transition: background-position 600ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+.side-gfx-right::before{
+}
 
-.side-gfx-visible{
+.side-gfx-left::before{
+    transform: scaleX(-1);
+}
+
+
+.side-gfx-visible::before{
 	background-position: 85vw 0px;
 }

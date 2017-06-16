@@ -14,9 +14,7 @@ var registered_emails = new Array();
 
 // getting emails of registered users
 database.ref("registration").on('value', (snapshot) => {
-	console.log(snapshot.val())
 	snapshot.forEach((user) => {
-		console.log(user.val().email);
 		var user_email = user.val().email;
 		if (user_email){
 			registered_emails.push(user_email);	
@@ -54,6 +52,7 @@ function submitData(){
 	// TODO: show the team name that they've registered with to repeated users
 	if (valid_submission) {
 		if (registered_emails.includes(s_email)){
+			// email id already exists
 			Materialize.toast("You've already registered for the event.", 4000);
 		} else {
 			var new_ref = database.ref('registration').push();
@@ -65,6 +64,10 @@ function submitData(){
 				email: s_email
 			});
 
+			// reset the form
+			var form = document.querySelector("#registration-form");
+			form.reset();
+
 			Materialize.toast('Registered Succeessfully!', 4000);	
 		}
 		
@@ -72,7 +75,6 @@ function submitData(){
 		// location.reload();
 
 	}else{
-		console.log("empty");
 		Materialize.toast('Please enter the correct details', 4000);
 	}
 }
