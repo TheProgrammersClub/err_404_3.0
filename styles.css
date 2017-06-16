@@ -38,6 +38,14 @@
 	min-height: 50vh;
 }
 
+#prizes-section{
+	min-height: 50vh;
+}
+
+.prizes-sub-heading{
+	margin-top: 20px;
+}
+
 /*overriding Materialize*/
 
 .brand-logo{
@@ -119,12 +127,13 @@ ul li a.active{
 }
 
 .col p{
-	text-align: justify;
+	/*text-align: justify;*/
 }
 
-.domain-content{
+.content-font-size{
 	font-size: 1.2em;
 }
+
 
 /*FAQ Accordions*/
 
@@ -205,7 +214,6 @@ ul li a.active{
 	left: 0px;
 	transform: translateY(-50%) scale(0);
 	transition: all 800ms cubic-bezier(0.4, 0.0, 0.2, 1);
-	/*filter: drop-shadow( 0 10px 15px rgba(11,27,38, 0.3));*/
 
 	width: 120px;
 	height: 172.5px;

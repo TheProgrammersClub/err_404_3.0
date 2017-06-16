@@ -51,59 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 })
 
-  // Initialize Firebase
-var config = {
-	apiKey: "AIzaSyD1hqg93PixOlMrWQbEltSl4o8aP2K3ris",
-	authDomain: "err-404-9789c.firebaseapp.com",
-	databaseURL: "https://err-404-9789c.firebaseio.com",
-	projectId: "err-404-9789c",
-	storageBucket: "",
-	messagingSenderId: "847914300774"
-};
-
-firebase.initializeApp(config);
 
 
-function submitData(){
-	var submit = document.getElementById('submit');
-	var team_name = document.getElementById('team_name');
-	var name = document.getElementById('name');
-	var contact = document.getElementById('contact');
-	var college = document.getElementById('college');
 
-	var s_t_name = team_name.value;
-	var s_name = name.value;
-	var s_contact = contact.value;
-	var s_college = college.value;
+function loadProgress() {
 
-	var database = firebase.database();
-
-	var date = new Date();
-
-	if (s_t_name != "" && s_name != "" && s_contact != "" && s_college != "") {
-
-		database.ref('registration/' + date.getTime()).set({
-			team_name: s_t_name,
-			name: s_name,
-			contact: s_contact,
-			college: s_college
-		});
-
-		Materialize.toast('Registered Succeessfully', 4000);
-
-		// location.reload();
-
-	}else{
-		console.log("empty");
-		Materialize.toast('Please enter the details', 2000);
-	}
-}
-
-
-function loadProgress() {		
-
-	setTimeout(function(){ 
-		document.getElementById('loader').style.display = "none";
-		document.getElementById('main').style.display = "block";	
-	 }, 1500);
+	document.getElementById('loader').style.display = "none";
+	document.getElementById('main').style.display = "block";
 }
