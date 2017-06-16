@@ -1,3 +1,30 @@
+#main{
+	display: none;
+}
+
+#loader{
+	height: 100vh;
+}
+
+.anim{			
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/dino_frame_1.png);
+    background-size: contain;
+    animation: animate 0.2s infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes animate{
+	from{
+		background-image: url(assets/dino_frame_1.png);
+	}
+	to{
+		background-image: url(assets/dino_frame_2.png);
+	}
+}
 
 .section{
 	min-height: 90vh;
