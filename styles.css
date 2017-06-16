@@ -99,3 +99,54 @@ ul li a.active{
 .domain-content{
 	font-size: 1.2em;
 }
+
+#faq-section .collapsible{
+	font-family: 'Josefin Sans', sans-serif;
+	border: 0px;
+	box-shadow: none;
+	font-size: 1.3rem;
+}
+#faq-section .collapsible-header{
+	
+	
+	border: 0px;
+	box-shadow: none;
+	transition: color 1s;
+	font-weight: bold;
+	background: transparent;
+}
+#faq-section .collapsible-header:hover{
+	border: 0px;
+	box-shadow: none;
+	color: #1de9b6;
+}
+#faq-section .collapsible-body{
+	font-size: 1.1rem;
+	border: 0px;
+}
+.cross-box{
+	padding-right: 5px;
+	
+}
+.cross-box > span{
+
+		display: inline-block;
+		width:15px;
+		height: 2px;
+		background: black;
+		
+	}
+
+	.horizontal-span{
+		top: -15px !important;
+		left: 15.25px;
+	}
+	.rotating-span{
+		position: relative;
+		left: 15.25px;	
+		transform: rotate(90deg);	
+		transition: .25s ease-in-out;
+	}
+	.open{
+		transform: rotate(0deg);
+	}
