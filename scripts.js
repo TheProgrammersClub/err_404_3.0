@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	$('.modal').modal();
 
 
+	// animations
+
+	var side_gfx = document.querySelectorAll(".side-gfx");
 
 	function isElementInViewport(el) {
 		var rect = el.getBoundingClientRect();
@@ -35,9 +38,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (isElementInViewport(badge)){
 			badge.classList.add('badge-visible');
 		}
+		for (var i = 0; i < side_gfx.length; i++) {
+			if (isElementInViewport(side_gfx[i])) {
+				side_gfx[i].classList.add("side-gfx-visible");
+			}
+		}
 	}
 	
 
+	// event listeners
 	window.addEventListener("scroll", handleScroll);
 	
 })
