@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			$(".rotating-span", this).removeClass('open');
 
 	});
-	
-		
-		
+	$('.modal').modal();
 		
 	
 })
