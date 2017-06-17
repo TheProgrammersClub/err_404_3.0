@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready( function () {
 	// initializing side nav
 	$(".button-collapse").sideNav();
 
@@ -17,6 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	});
 	$('.modal').modal();
+
+	// autocomplete for college names
+	$('input.autocomplete').autocomplete({
+		data: {
+			"M.H. Saboo Siddik": null,
+			"D.J Sanghvi": null,
+			"Don Bosco Institute": null,
+			"V.J.T.I": null,
+		},
+		minLength: 0,
+	});
 
 
 	// animations

@@ -52,6 +52,11 @@
 	margin-left: 16px;
 }
 
+.autocomplete-content{
+	position: absolute;
+	right: 0;
+}
+
 
 nav ul a:hover{
 	background-color: rgba(250, 250, 250, 0.1);
