@@ -48,6 +48,12 @@ function submitData(){
 			valid_submission = false;
 		}
 	}
+	
+	// checking for correct phone number
+	if (s_contact.length < 8 || s_contact.length > 10){
+		contact.classList.add('invalid');
+		valid_submission = false;
+	}
 
 	// TODO: show the team name that they've registered with to repeated users
 	if (valid_submission) {
