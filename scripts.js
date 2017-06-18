@@ -1,11 +1,20 @@
 $(document).ready( function () {
 	// initializing side nav
-	$(".button-collapse").sideNav();
+	// $(".button-collapse").sideNav();
+	$('.button-collapse').sideNav({
+      menuWidth: 300,
+      edge: 'left',
+      closeOnClick: true,
+      draggable: true
+    });
+    $(".drag-target").on("swipeleft", function () {
+      $("#sidenav-overlay").trigger("click");
+    });
 
 	$(".scrollspy").scrollSpy({
 		scrollOffset:60
 	});
-
+	
 	$('.collapsible-header').click(function(){
 		
 		$(".rotating-span").removeClass('open');
