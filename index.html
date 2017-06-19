@@ -41,7 +41,7 @@
 	<!-- Loader | ends -->
 
 	<!-- main body | starts -->
-	<div id="main">
+	<div id="main" class="grey lighten-5">
 
 		<!-- Nav bar section -->
 		<div class="navbar-fixed">
@@ -86,13 +86,14 @@
 		<!-- landing page section -->
 		<div id="landing-section" class="container-fluid section valign-wrapper grey lighten-5 scrollspy">
 			<div class="container-fluid">
-				<img src="assets/dino_anim.gif" class="responsive-img">
+				<img src="assets/dino_anim.gif" class="responsive-img main-logo">
 			</div>
 		</div>
 
 
 		<!-- About -->
-		<div id="about-us-section" class="container-fluid section grey darken-4 scrollspy side-gfx ">
+		<div id="about-us-section" class="container-fluid section grey darken-4 scrollspy ">
+			<div class="side-gfx"></div>
 			<div class="container">
 				<h2 class="center light-heading">What it's about?</h2>
 				<p class="light-heading flow-text">
@@ -184,8 +185,8 @@
 
 
 		<!-- Prizes -->
-		<div id="prizes-section" class="container-fluid section grey darken-4 scrollspy prize-gfx side-gfx side-gfx-left">
-
+		<div id="prizes-section" class="container-fluid section grey darken-4 scrollspy prize-gfx ">
+			<div class="side-gfx side-gfx-left"></div>
 			<div class="container row center">
 
 				<h2 class="center light-heading">Prizes</h2><br>
@@ -276,7 +277,8 @@
 
 
 		<!-- Rules -->
-		<div id="rules-section" class="container-fluid section grey darken-4 scrollspy side-gfx ">
+		<div id="rules-section" class="container-fluid section grey darken-4 scrollspy">
+			<div class="side-gfx"></div>
 			<div class="container">
 				<h2 class="center light-heading">Rules and regulations!</h2>
 				<p class="light-heading flow-text">
@@ -332,7 +334,8 @@
 
 
 		<!-- Venue -->
-		<div id="venue-section" class="container-fluid section grey darken-4 scrollspy side-gfx side-gfx-left ">
+		<div id="venue-section" class="container-fluid section grey darken-4 scrollspy ">
+			<div class="side-gfx side-gfx-left"></div>
 			<div class="container">
 				<h2 class="center light-heading">Venue</h2><br><br>
 
@@ -411,7 +414,8 @@
 
 
 		<!-- Schedule -->
-		<div id="schedule-section" class="container-fluid section grey darken-4 scrollspy side-gfx">
+		<div id="schedule-section" class="container-fluid section grey darken-4 scrollspy">
+			<div class="side-gfx"></div>
 			<div class="container">
 				<h2 class="center light-heading">Schedule</h2>
 				<h5 class="light-heading">
@@ -478,9 +482,9 @@
 
 
 		<!--Footer Section-->
-		<footer class="page-footer grey darken-4 light-heading flow-text">
+		<footer class="page-footer grey darken-4  flow-text">
 			<div class="container">
-				<div class="row">
+				<div class="row light-heading">
 					<div class="col l6 s12">
 						<h3>ERR_404</h3>
 						<p>Website developed and maintained by-</p>
@@ -521,7 +525,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 	<!-- Firebase JS -->
 	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<!-- Scroll Reval -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<!-- Custom JS -->
+	<script src="animation_logic.js"></script>
 	<script src="scripts.js"></script>
 	<script src="firebase_logic.js"></script>
 
