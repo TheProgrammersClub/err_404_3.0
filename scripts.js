@@ -87,6 +87,9 @@ function loadProgress() {
 	document.getElementById('loader').style.display = "none";
 	document.getElementById('main').style.display = "block";
 
+	// enable scroll when page loaded
+	document.getElementsByTagName("body")[0].style["overflow-y"] = "scroll";
+
 	// animate the logo after loader is removed load
 	main_pop_up_options = {
 		duration: 800,
