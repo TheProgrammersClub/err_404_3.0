@@ -9,6 +9,40 @@ body{
 #loader{
 	height: 100vh;
 }
+
+.landing-title{
+	font-family: "Oswald", sans-serif;
+	font-size: 8em;
+	color: #FFD740;
+}
+
+.landing-sub{
+	font-family: "Oswald", sans-serif;
+	/*font-size: 30px;*/
+	/*line-height: 10px;*/
+	color: #212112;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.countdown-title{
+	color: #212121;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 100%;
+	letter-spacing: 0.3em;
+}
+
+.countdown-amount{
+	color: #212121;
+	font-family: "Oswald", sans-serif;
+	font-size: 7em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
 .anim{			
     width: 70px;
     height: 70px;
@@ -293,4 +327,15 @@ ul li a.active{
 
 .side-gfx-visible::before{
 	background-position: 85vw 0px;
+}
+
+
+@media only screen and (max-width: 400px) {
+	.landing-title{
+		font-size: 6em;
+	}
+
+	.landing-sub{
+		font-size: 2em;
+	}
 }
