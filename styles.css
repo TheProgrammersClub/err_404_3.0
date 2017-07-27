@@ -3,6 +3,11 @@ body{
 	overflow-y: hidden;
 }
 
+.oswald{
+	font-family: "Oswald", sans-serif;
+
+}
+
 #main{
 	display: none;
 }
@@ -192,7 +197,7 @@ ul li a.active{
 	
 	border: 0px;
 	box-shadow: none;
-	transition: color 1s;
+	transition: color .3s;
 	font-weight: bold;
 	background: transparent;
 }
