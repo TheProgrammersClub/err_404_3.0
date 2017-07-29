@@ -401,10 +401,10 @@
 
 		<!-- Registration -->
 		<div id="registration-section" class="container-fluid section grey lighten-5 scrollspy">
-			<div class="container">
+			<div class="container row">
 				<h2 class="center dark-heading">Interested in coming over?</h2>
 				<h5 class="center dark-heading">Fill in the following details and see you at the hackathon</h5>
-				<form class="" id="registration-form">
+				<form class="col l6 m6 s12 offset-l3 offset-m3" id="registration-form">
 					<div class="row">
 						<div class="input-field col l12 m12 s12">
 							<i class="material-icons prefix">group</i>
@@ -413,32 +413,31 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="input-field col l6 m12 s12">
+						<div class="input-field col l12 m12 s12">
 							<i class="material-icons prefix">account_circle</i>
 							<input id="name" type="text" class="validate">
-							<label for="name">First Member Name</label>
+							<label for="name">Lead Member Name</label>
 						</div>
-
-						<div class="input-field col l5 m5 s12">
+					</div>
+					<div class="row">
+						<div class="input-field col l12 m12 s12">
 							<i class="material-icons prefix">email</i>
 							<input id="email" type="email" class="validate">
-							<label for="name" data-error="Please enter a valid email address">First Member Email ID</label>
+							<label for="name" data-error="Please enter a valid email address">Lead Member Email ID</label>
 						</div>
-					
-						<div class="input-field col l6 m6 s12">
-							<i class="material-icons prefix">account_circle</i>
-							<input id="name" type="text" class="validate">
-							<label for="name">Second Member Name</label>
-						</div>
+					</div>
 
-						<div class="input-field col l5 m5 s12">
+					<div class="row">
+						<div class="input-field col l12 m12 s12">
 							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate">
-							<label for="name" data-error="Please enter a valid email address">Second Member Email ID</label>
-						</div>
-
-						<div class="col l1 m1 s12 offset-s5">
-							<a onclick="addMember()" class="btn-floating btn-large waves-effect waves-light teal accent-3"><i class="material-icons">add</i></a>
+							<select class="validate">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+							<label>Team Members Count</label>
 						</div>
 					</div>
 
