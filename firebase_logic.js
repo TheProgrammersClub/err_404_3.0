@@ -28,6 +28,7 @@ function submitData(){
 	var team_name = document.getElementById('team_name');
 	var name = document.getElementById('name');
 	var email = document.getElementById('email');
+	var count = document.getElementById("count");
 	var contact = document.getElementById('contact');
 	var college = document.getElementById('college');
 	var input_list = document.querySelectorAll(".validate");
@@ -35,6 +36,7 @@ function submitData(){
 	var s_t_name = team_name.value;
 	var s_name = name.value;
 	var s_email = email.value;
+	var s_count = count.value;
 	var s_contact = contact.value;
 	var s_college = college.value;
 
