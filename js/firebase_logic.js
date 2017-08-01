@@ -46,7 +46,7 @@ function submitData(){
 	var s_college = college.value;
 
 	var s_agree_terms = document.getElementById("terms-box");
-	console.log(s_count)
+	// console.log(s_count)
 
 	var valid_submission = true;
 	// checking if all submissions are valid

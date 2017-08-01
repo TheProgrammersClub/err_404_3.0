@@ -97,6 +97,10 @@ body{
 	margin-top: 20px;
 }
 
+.terms-and-conditions a{
+	color: #212121;
+}
+
 /*overriding Materialize*/
 
 .brand-logo{
