@@ -11,18 +11,13 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 var registered_emails = new Array();
-var registered_teams = new Array();
 
 // getting emails of registered users
 database.ref("registration").on('value', (snapshot) => {
 	snapshot.forEach((user) => {
 		var user_email = user.val().email;
-		var user_team = user.val().team_name;
 		if (user_email){
 			registered_emails.push(user_email);	
-		}
-		if (user_team) {
-			registered_teams.push(user_team);
 		}
 	});
 });
@@ -45,8 +40,7 @@ function submitData(){
 	var s_contact = contact.value;
 	var s_college = college.value;
 
-	var s_agree_terms = document.getElementById("terms-box");
-	console.log(s_count)
+	
 
 	var valid_submission = true;
 	// checking if all submissions are valid
@@ -56,8 +50,6 @@ function submitData(){
 			valid_submission = false;
 		}
 	}
-
-
 	
 	// checking for correct phone number
 	if (s_contact.length < 8 || s_contact.length > 10){
@@ -65,18 +57,11 @@ function submitData(){
 		valid_submission = false;
 	}
 
-	if (s_count == 0){
-		valid_submission = false;
-	}
-
-
 	// TODO: show the team name that they've registered with to repeated users
-	if (valid_submission && s_agree_terms.checked) {
+	if (valid_submission) {
 		if (registered_emails.includes(s_email)){
 			// email id already exists
 			Materialize.toast("You've already registered for the event.", 4000);
-		} else if (registered_teams.includes(s_t_name)) {
-			Materialize.toast("The team name has already been taken.", 4000);
 		} else {
 			var new_ref = database.ref('registration').push();
 			new_ref.set({
@@ -84,8 +69,7 @@ function submitData(){
 				name: s_name,
 				contact: s_contact,
 				college: s_college,
-				email: s_email,
-				count: s_count
+				email: s_email
 			});
 
 			// reset the form
@@ -99,11 +83,6 @@ function submitData(){
 		// location.reload();
 
 	}else{
-		if (!valid_submission){
-			Materialize.toast('Please enter the correct details', 4000);	
-		} else if (!s_agree_terms.checked) {
-			Materialize.toast("Please Agree to the Terms & Conditions", 4000);
-		}
-		
+		Materialize.toast('Please enter the correct details', 4000);
 	}
 }

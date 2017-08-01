@@ -3,16 +3,12 @@ body{
 	/*overflow-y: hidden;*/
 }
 
-.no-margin-bottom{
-	margin-bottom: 0px;
-}
-
 .oswald{
 	font-family: "Oswald", sans-serif;
 }
 
 .yellow-accent{
-	color: #64FFDA;
+	color: #FFD740;
 }
 
 #main{
@@ -26,7 +22,7 @@ body{
 .landing-title{
 	font-family: "Oswald", sans-serif;
 	font-size: 8em;
-	color: #64FFDA;
+	color: #FFD740;
 }
 
 .landing-sub{
@@ -61,7 +57,7 @@ body{
     height: 70px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../assets/dino_frame_1.png");
+    background-image: url("assets/dino_frame_1.png);
     background-size: contain;
     animation: animate 0.2s infinite;
     margin-bottom: 20px;
@@ -69,10 +65,10 @@ body{
 
 @keyframes animate{
 	from{
-		background-image: url("../assets/dino_frame_1.png");
+		background-image: url("assets/dino_frame_1.png);
 	}
 	to{
-		background-image: url("../assets/dino_frame_2.png");
+		background-image: url("assets/dino_frame_2.png);
 	}
 }
 
@@ -150,27 +146,27 @@ ul li a{
 
 input[type=text]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]){
-	border-bottom: 1px solid #64FFDA;
-	box-shadow: 0 1px 0 0 #64FFDA;
+	border-bottom: 1px solid #FFD740;
+	box-shadow: 0 1px 0 0 #FFD740;
 }
 
 input[type=text].valid
 ,input[type=tel].valid{
-	border-bottom: 1px solid #64FFDA;
-	box-shadow: 0 1px 0 0 #64FFDA;
+	border-bottom: 1px solid #FFD740;
+	box-shadow: 0 1px 0 0 #FFD740;
 }
 
 input[type=text]:focus:not([readonly])+label,
 input[type=tel]:focus:not([readonly])+label{
-	color: #64FFDA;
+	color: #FFD740;
 }
 
 .input-field .prefix.active{
-	color: #64FFDA;
+	color: #FFD740;
 }
 
 ul li a.active{
-	color: #64FFDA;
+	color: #FFD740;
     background-color: rgba(250, 250, 250, 0.1);
 }
 
@@ -211,7 +207,7 @@ ul li a.active{
 #faq-section .collapsible-header:hover{
 	border: 0px;
 	box-shadow: none;
-	color: #64FFDA;
+	color: #FFD740;
 }
 #faq-section .collapsible-body{
 	font-size: 1.1rem;
@@ -260,7 +256,7 @@ ul li a.active{
 .trophy{
 	height: 100%;
 	width: 100%;
-	background-image: url("../assets/trophy.png");
+	background-image: url("assets/trophy.png");
 
 }
 
@@ -273,7 +269,7 @@ ul li a.active{
 
 	width: 120px;
 	height: 172.5px;
-	background-image: url("../assets/badge.png");
+	background-image: url("assets/badge.png");
 	background-size: contain;
 }
 
@@ -290,7 +286,7 @@ ul li a.active{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 2px solid #64FFDA;
+	border: 2px solid #FFD740;
 	padding: 10px;
 	background-color: #fafafa;
 	background-color: #fff;
@@ -316,7 +312,7 @@ ul li a.active{
 	bottom: 0;*/
 
     background-position: 95vw 0px;
-	background-image: url("../assets/side_gfx.png");
+	background-image: url("assets/side_gfx.png);
     background-repeat: no-repeat;
     background-size: contain;
     /*filter: grayscale(100%);*/
@@ -331,7 +327,7 @@ ul li a.active{
 	right: 0;
 	bottom: 0;
 	background-position: 90vw 0px;
-	background-image: url("../assets/side_gfx.png");
+	background-image: url("assets/side_gfx.png);
     background-repeat: no-repeat;
     background-size: contain;
     filter: grayscale(100%);

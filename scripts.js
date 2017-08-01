@@ -15,6 +15,7 @@ $(document).ready( function () {
 		scrollOffset:60
 	});
 
+	console.log('HUEHUEHUE');
 	$('select').material_select();
 	
 	$('.collapsible-header').click(function(){
