@@ -1,3 +1,4 @@
+
 $(document).ready( function () {
 	// initializing side nav
 	// $(".button-collapse").sideNav();
@@ -107,7 +108,7 @@ $(document).ready( function () {
 
 function countDownTimer(){
 
-	var event_date = new Date(2017, 07, 19, 9, 00, 00);
+	var event_date = new Date(2017, 09, 07, 9, 00, 00);
 	var curr_date = new Date();
 	var t1 = event_date.getTime();
 	var t2 = curr_date.getTime();
