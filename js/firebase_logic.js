@@ -34,6 +34,7 @@ function submitData(){
 	var name = document.getElementById('name');
 	var email = document.getElementById('email');
 	var count = document.getElementById("count");
+	var jain_count = document.getElementById("jain-count");
 	var contact = document.getElementById('contact');
 	var college = document.getElementById('college');
 	var input_list = document.querySelectorAll(".validate");
@@ -42,6 +43,7 @@ function submitData(){
 	var s_name = name.value;
 	var s_email = email.value;
 	var s_count = count.value;
+	var s_jain_count = jain_count.value;
 	var s_contact = contact.value;
 	var s_college = college.value;
 
@@ -85,7 +87,8 @@ function submitData(){
 				contact: s_contact,
 				college: s_college,
 				email: s_email,
-				count: s_count
+				count: s_count,
+				jain_count: s_jain_count,
 			});
 
 			// reset the form
