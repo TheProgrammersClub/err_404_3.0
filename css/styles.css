@@ -27,6 +27,15 @@ body{
 	font-family: "Oswald", sans-serif;
 	font-size: 8em;
 	color: #64FFDA;
+	overflow-x: hidden;
+}
+
+.landing-title img{
+	height: 100%;
+	width: 102%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%); 
 }
 
 .landing-sub{
@@ -352,11 +361,25 @@ ul li a.active{
 	background-position: 85vw 0px;
 }
 
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
+	
+	.brand-logo{
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.brand-logo{
+		margin-left: 0;
+	}
+}
 
 @media only screen and (max-width: 400px) {
-	.landing-title{
-		font-size: 6em;
+	.landing-title img{
+		width: 200%;
 	}
+
 
 	.landing-sub{
 		font-size: 2em;
