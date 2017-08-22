@@ -3,12 +3,16 @@ body{
 	/*overflow-y: hidden;*/
 }
 
+.no-margin-bottom{
+	margin-bottom: 0px;
+}
+
 .oswald{
 	font-family: "Oswald", sans-serif;
 }
 
 .yellow-accent{
-	color: #FFD740;
+	color: #64FFDA;
 }
 
 #main{
@@ -22,7 +26,16 @@ body{
 .landing-title{
 	font-family: "Oswald", sans-serif;
 	font-size: 8em;
-	color: #FFD740;
+	color: #64FFDA;
+	overflow-x: hidden;
+}
+
+.landing-title img{
+	height: 100%;
+	width: 102%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%); 
 }
 
 .landing-sub{
@@ -57,7 +70,7 @@ body{
     height: 70px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(assets/dino_frame_1.png);
+    background-image: url("../assets/dino_frame_1.png");
     background-size: contain;
     animation: animate 0.2s infinite;
     margin-bottom: 20px;
@@ -65,10 +78,10 @@ body{
 
 @keyframes animate{
 	from{
-		background-image: url(assets/dino_frame_1.png);
+		background-image: url("../assets/dino_frame_1.png");
 	}
 	to{
-		background-image: url(assets/dino_frame_2.png);
+		background-image: url("../assets/dino_frame_2.png");
 	}
 }
 
@@ -91,6 +104,10 @@ body{
 
 .prizes-sub-heading{
 	margin-top: 20px;
+}
+
+.terms-and-conditions a{
+	color: #212121;
 }
 
 /*overriding Materialize*/
@@ -146,27 +163,27 @@ ul li a{
 
 input[type=text]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]){
-	border-bottom: 1px solid #FFD740;
-	box-shadow: 0 1px 0 0 #FFD740;
+	border-bottom: 1px solid #64FFDA;
+	box-shadow: 0 1px 0 0 #64FFDA;
 }
 
 input[type=text].valid
 ,input[type=tel].valid{
-	border-bottom: 1px solid #FFD740;
-	box-shadow: 0 1px 0 0 #FFD740;
+	border-bottom: 1px solid #64FFDA;
+	box-shadow: 0 1px 0 0 #64FFDA;
 }
 
 input[type=text]:focus:not([readonly])+label,
 input[type=tel]:focus:not([readonly])+label{
-	color: #FFD740;
+	color: #64FFDA;
 }
 
 .input-field .prefix.active{
-	color: #FFD740;
+	color: #64FFDA;
 }
 
 ul li a.active{
-	color: #FFD740;
+	color: #64FFDA;
     background-color: rgba(250, 250, 250, 0.1);
 }
 
@@ -207,7 +224,7 @@ ul li a.active{
 #faq-section .collapsible-header:hover{
 	border: 0px;
 	box-shadow: none;
-	color: #FFD740;
+	color: #64FFDA;
 }
 #faq-section .collapsible-body{
 	font-size: 1.1rem;
@@ -256,7 +273,7 @@ ul li a.active{
 .trophy{
 	height: 100%;
 	width: 100%;
-	background-image: url("assets/trophy.png");
+	background-image: url("../assets/trophy.png");
 
 }
 
@@ -269,7 +286,7 @@ ul li a.active{
 
 	width: 120px;
 	height: 172.5px;
-	background-image: url("assets/badge.png");
+	background-image: url("../assets/badge.png");
 	background-size: contain;
 }
 
@@ -286,7 +303,7 @@ ul li a.active{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 2px solid #FFD740;
+	border: 2px solid #64FFDA;
 	padding: 10px;
 	background-color: #fafafa;
 	background-color: #fff;
@@ -312,7 +329,7 @@ ul li a.active{
 	bottom: 0;*/
 
     background-position: 95vw 0px;
-	background-image: url(assets/side_gfx.png);
+	background-image: url("../assets/side_gfx.png");
     background-repeat: no-repeat;
     background-size: contain;
     /*filter: grayscale(100%);*/
@@ -327,7 +344,7 @@ ul li a.active{
 	right: 0;
 	bottom: 0;
 	background-position: 90vw 0px;
-	background-image: url(assets/side_gfx.png);
+	background-image: url("../assets/side_gfx.png");
     background-repeat: no-repeat;
     background-size: contain;
     filter: grayscale(100%);
@@ -344,11 +361,30 @@ ul li a.active{
 	background-position: 85vw 0px;
 }
 
+.big
+{
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
+	
+	.brand-logo{
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.brand-logo{
+		margin-left: 0;
+	}
+}
 
 @media only screen and (max-width: 400px) {
-	.landing-title{
-		font-size: 6em;
+	.landing-title img{
+		width: 200%;
 	}
+
 
 	.landing-sub{
 		font-size: 2em;
