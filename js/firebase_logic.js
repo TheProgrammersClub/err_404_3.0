@@ -110,3 +110,8 @@ function submitData(){
 		
 	}
 }
+
+function regClosed(){
+
+	Materialize.toast('Registrations have been closed :(', 4000);
+}

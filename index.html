@@ -118,7 +118,7 @@
 						</span>
 					</div>
 					<a href="#registration-section" class="waves-effect waves-light grey darken-4 btn">Register</a>
-					<p class="flow-text">Last date for registration: <b>20/9/17</b></p>
+					<p class="flow-text">Registrations are now <b>Closed</b></p>
 
 				</div>
 			</div>
@@ -436,26 +436,26 @@
 <div id="registration-section" class="container-fluid section grey lighten-5 scrollspy">
 	<div class="container row">
 		<h2 class="center dark-heading">Interested in coming over?</h2>
-		<h5 class="center dark-heading">Fill in the following details and see you at the hackathon</h5>
+		<h5 class="center dark-heading">Registrations are now closed</h5>
 		<form class="col l6 m6 s12 offset-l3 offset-m3" id="registration-form">
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">group</i>
-					<input id="team_name" type="text" class="validate">
+					<input disabled id="team_name" type="text" class="validate">
 					<label for="team_name">Team Name</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">account_circle</i>
-					<input id="name" type="text" class="validate">
+					<input disabled id="name" type="text" class="validate">
 					<label for="name">Lead Member Name</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">email</i>
-					<input id="email" type="email" class="validate">
+					<input disabled id="email" type="email" class="validate">
 					<label for="name" data-error="Please enter a valid email address">Lead Member Email ID</label>
 				</div>
 			</div>
@@ -463,7 +463,7 @@
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">format_list_numbered</i>
-					<select class="" id="count">
+					<select disabled class="" id="count">
 						<option value="0">Choose your option</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -478,7 +478,7 @@
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">person_outline</i>
-					<select class="" id="jain-count">
+					<select disabled class="" id="jain-count">
 						<option value="0">For special food arrangements</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -493,25 +493,25 @@
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">phone</i>
-					<input id="contact" type="number" class="validate">
+					<input disabled id="contact" type="number" class="validate">
 					<label for="contact" data-error="Please enter a correct phone number">Contact</label>
 				</div>
 			</div>
 			<div class="row no-margin-bottom">
 				<div class="input-field col l12 m12 s12">
 					<i class="material-icons prefix">school</i>
-					<input id="college" type="text" class="validate autocomplete">
+					<input disabled id="college" type="text" class="validate autocomplete">
 					<label for="college">College</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col l12 m12 s12">
-					<input type="checkbox" class="filled-in" id="terms-box" />
+					<input disabled type="checkbox" class="filled-in" id="terms-box" />
 					<label for="terms-box" class="terms-and-conditions">I Accept the <a href="#rules-section">Rules</a> & have read the <a href="#guidelines-section">Guidelines</a></label>
 				</div>
 			</div>
 			<div class="row center">
-				<div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="submitData()">SUBMIT</div>	
+				<div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="regClosed()">SUBMIT</div>	
 			</div>
 
 		</form>
