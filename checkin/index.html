@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- useful meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="description" content="An event hosted by MHSSCE to promote the programming culture">
+	<meta name="keywords" content="hackathon">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#212121">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#212121">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+	<!-- title -->
+	<title>ERR_404 | Checkin</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="../assets/favicon.png">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
+
+</head>
+<body onload="loadProgress()">
+	
+
+	<!-- main body | starts -->
+	<div id="main" class="grey lighten-5 row container">
+        <form class="col l6 m6 s12 offset-l3 offset-m3" id="checkin-form">
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">group</i>
+					<input  id="team_name" type="text" class="validate">
+					<label for="team_name">Team Name</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">account_circle</i>
+					<input  id="name" type="text" class="validate">
+					<label for="name">Lead Member Name</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">email</i>
+					<input  id="email" type="email" class="validate">
+					<label for="email" data-error="Please enter a valid email address">Lead Member Email ID</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">format_list_numbered</i>
+					<select  class="" id="count" onchange="countChanged()">
+						<option value="0">Choose your option</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<label>Team Members Count</label>
+				</div>
+            </div>
+            
+            <div class="row extra_name">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">account_circle</i>
+					<input  id="name_2" type="text" class="validate extra extra_name--validate">
+					<label for="name_2">Team Member 2</label>
+				</div>
+            </div>
+            <div class="row extra_email">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">email</i>
+					<input  id="email_2" type="email" class="validate extra extra_email--validate">
+					<label for="email_2" data-error="Please enter a valid email address">Email ID of Member 2</label>
+				</div>
+            </div>
+            
+            <div class="row extra_name">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">account_circle</i>
+					<input  id="name_3" type="text" class="validate extra extra_name--validate">
+					<label for="name_3">Team Member 3</label>
+				</div>
+            </div>
+            <div class="row extra_email">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">email</i>
+					<input  id="email_3" type="email" class="validate extra extra_email--validate">
+					<label for="email_3" data-error="Please enter a valid email address">Email ID of Member 3</label>
+				</div>
+            </div>
+            
+            <div class="row extra_name">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">account_circle</i>
+					<input  id="name_4" type="text" class="validate extra extra_name--validate">
+					<label for="name_4">Team Member 4</label>
+				</div>
+            </div>
+            <div class="row extra_email">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">email</i>
+					<input  id="email_4" type="email" class="validate extra extra_email--validate">
+					<label for="email_4" data-error="Please enter a valid email address">Email ID of Member 4</label>
+				</div>
+            </div>
+            
+            <div class="row extra_name">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">account_circle</i>
+					<input  id="name_5" type="text" class="validate extra extra_name--validate">
+					<label for="name_5">Team Member 5</label>
+				</div>
+            </div>
+            <div class="row extra_email">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">email</i>
+					<input  id="email_5" type="email" class="validate extra extra_email--validate">
+					<label for="email_5" data-error="Please enter a valid email address">Email ID of Member 5</label>
+				</div>
+            </div>
+
+			<!-- <div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">person_outline</i>
+					<select  class="" id="jain-count">
+						<option value="0">For special food arrangements</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<label>Number of Jain team members (if any)</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">phone</i>
+					<input  id="contact" type="number" class="validate">
+					<label for="contact" data-error="Please enter a correct phone number">Contact</label>
+				</div>
+			</div>
+			<div class="row no-margin-bottom">
+				<div class="input-field col l12 m12 s12">
+					<i class="material-icons prefix">school</i>
+					<input  id="college" type="text" class="validate autocomplete">
+					<label for="college">College</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col l12 m12 s12">
+					<input  type="checkbox" class="filled-in" id="terms-box" />
+					<label for="terms-box" class="terms-and-conditions">I Accept the <a href="#rules-section">Rules</a> & have read the <a href="#guidelines-section">Guidelines</a></label>
+				</div>
+			</div> -->
+			<div class="row center">
+				<div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="submitData()">Confirm Seat</div>	
+			</div>
+
+		</form>
+    </div>
+
+		
+	<!-- main body | ends -->
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	    <!-- Materialize JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- Firebase JS -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<!-- Scroll Reval -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/animation_logic.js"></script>
+	<script src="js/scripts.js"></script>
+    <script src="js/firebase_logic.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
