@@ -7857,7 +7857,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .slider {
   position: relative;
-  height: 400px;
+  height: 600px !important;
   width: 100%;
 }
 
@@ -7905,11 +7905,10 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .slides li .caption {
-  color: #fff;
+  color: #;
   position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 70%;
+  width: 50%;
+  top: 65%;
   opacity: 0;
 }
 
