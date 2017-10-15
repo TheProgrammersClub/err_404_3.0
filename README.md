@@ -1,3 +1,3 @@
-# err_404
+# Err_404 HackNotFound
 
-24 hrs Hackathon
+Err_404 HackNotFound is a 24 hrs State Hackathon Organized by M.H. Saboo Siddik College of Engineering.
