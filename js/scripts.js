@@ -186,5 +186,14 @@ function loadProgress() {
 
 
 $(document).ready(function(){
-	$('.slider').slider();
-});
+	$('.winner-slide').slick({
+		autoplay:true,
+		autoplaySpeed:6000,
+		arrows:true,
+		prevArrow:'<button type="button" class="slick-prev" style="color:#3e3e3e;"></button>',
+		nextArrow:'<button type="button" class="slick-next" style="color:#3e3e3e;"></button>',
+		dots: true,
+		slidesToShow:1,
+		slidesToScroll:1
+	});
+  });
