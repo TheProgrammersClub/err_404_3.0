@@ -101,11 +101,11 @@ $(document).ready( function () {
 	// logging dino-say
 	print_dino_say();
 
-	setInterval(countDownTimer, 1000);
+	//setInterval(countDownTimer, 1000);
 	
 	
 })
-
+/*
 function countDownTimer(){
 
 	var event_date = new Date(2017, 09, 07, 9, 00, 00);
@@ -128,7 +128,7 @@ function countDownTimer(){
 	// console.log(event_date + "\n" + curr_date + "\n" + diff);
 	// console.log(day + "\n" + hour + "\n" + min + "\n" + sec);
 }
-
+*/
 function print_dino_say(){
 	// printing a dino-say kinda dialogue to the console (if you modify it, please review the placements of slashes before pushing)
 	dinoSay = "\n\
