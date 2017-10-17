@@ -1,5 +1,14 @@
 body{
 	overflow-x: hidden;
+	/*overflow-y: hidden;*/
+}
+
+.oswald{
+	font-family: "Oswald", sans-serif;
+}
+
+.yellow-accent{
+	color: #FFD740;
 }
 
 #main{
@@ -9,6 +18,40 @@ body{
 #loader{
 	height: 100vh;
 }
+
+.landing-title{
+	font-family: "Oswald", sans-serif;
+	font-size: 8em;
+	color: #FFD740;
+}
+
+.landing-sub{
+	font-family: "Oswald", sans-serif;
+	/*font-size: 30px;*/
+	/*line-height: 10px;*/
+	color: #212112;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.countdown-title{
+	color: #212121;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 100%;
+	letter-spacing: 0.3em;
+}
+
+.countdown-amount{
+	color: #212121;
+	font-family: "Oswald", sans-serif;
+	font-size: 7em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
 .anim{			
     width: 70px;
     height: 70px;
@@ -103,27 +146,27 @@ ul li a{
 
 input[type=text]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]){
-	border-bottom: 1px solid #1de9b6;
-	box-shadow: 0 1px 0 0 #1de9b6;
+	border-bottom: 1px solid #FFD740;
+	box-shadow: 0 1px 0 0 #FFD740;
 }
 
 input[type=text].valid
 ,input[type=tel].valid{
-	border-bottom: 1px solid #00E676;
-	box-shadow: 0 1px 0 0 #00E676;
+	border-bottom: 1px solid #FFD740;
+	box-shadow: 0 1px 0 0 #FFD740;
 }
 
 input[type=text]:focus:not([readonly])+label,
 input[type=tel]:focus:not([readonly])+label{
-	color: #1de9b6;
+	color: #FFD740;
 }
 
 .input-field .prefix.active{
-	color: #1de9b6;
+	color: #FFD740;
 }
 
 ul li a.active{
-	color: #1de9b6;
+	color: #FFD740;
     background-color: rgba(250, 250, 250, 0.1);
 }
 
@@ -157,14 +200,14 @@ ul li a.active{
 	
 	border: 0px;
 	box-shadow: none;
-	transition: color 1s;
+	transition: color .3s;
 	font-weight: bold;
 	background: transparent;
 }
 #faq-section .collapsible-header:hover{
 	border: 0px;
 	box-shadow: none;
-	color: #1de9b6;
+	color: #FFD740;
 }
 #faq-section .collapsible-body{
 	font-size: 1.1rem;
@@ -235,18 +278,24 @@ ul li a.active{
 }
 /*Trophy animation -- End*/
 
+.sponsors-container{
+	margin-top: 10vh;
+}
 
 .sponsors-logo-div{
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
-	border: 2px solid #1de9b6;
+	border: 2px solid #FFD740;
 	padding: 10px;
 	background-color: #fafafa;
+	background-color: #fff;
+	overflow: hidden;
 }
 
 .sponsors-img{
-	width: 100px;
+	width: 90%;
+	margin-left: 5%;
 	/*max-width: 100px;*/
 }
 
@@ -294,3 +343,15 @@ ul li a.active{
 .side-gfx-visible::before{
 	background-position: 85vw 0px;
 }
+
+
+@media only screen and (max-width: 400px) {
+	.landing-title{
+		font-size: 6em;
+	}
+
+	.landing-sub{
+		font-size: 2em;
+	}
+}
+
