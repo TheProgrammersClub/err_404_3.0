@@ -1,5 +1,6 @@
 
 $(document).ready( function () {
+
 	// initializing side nav
 	// $(".button-collapse").sideNav();
 	$('.button-collapse').sideNav({
@@ -186,7 +187,7 @@ function loadProgress() {
 
 
 $(document).ready(function(){
-	$('.winner-slide').slick({
+	$('.landing-slide').slick({
 		autoplay:true,
 		autoplaySpeed:6000,
 		arrows:true,
