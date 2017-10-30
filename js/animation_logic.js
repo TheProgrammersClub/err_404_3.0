@@ -1,9 +1,12 @@
+
+
+
 // reference to scroll reveal
 var sr = ScrollReveal();
 
 
 jQuery(document).ready(function($) {
-	
+		
 
 	scale_up_option = {
 		duration: 800,
