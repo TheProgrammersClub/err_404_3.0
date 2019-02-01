@@ -102,34 +102,35 @@ $(document).ready( function () {
 	// logging dino-say
 	print_dino_say();
 
-	//setInterval(countDownTimer, 1000);
+	// setInterval(countDownTimer, 1000);
 	
 	
-})
-/*
-function countDownTimer(){
+});
 
-	var event_date = new Date(2017, 09, 07, 9, 00, 00);
-	var curr_date = new Date();
-	var t1 = event_date.getTime();
-	var t2 = curr_date.getTime();
-	var day = Math.floor((t1-t2)/(24*60*60*1000));
-	t1 = t1 - day*24*60*60*1000;
-	var hour = Math.floor((t1-t2)/(60*60*1000));
-	t1 = t1 - hour*60*60*1000;
-	var min = Math.floor((t1-t2)/(60*1000));
-	t1 = t1 - min*60*1000;
-	var sec = Math.floor((t1-t2)/(1000));
 
-	document.getElementById('day').innerHTML = day;
-	document.getElementById('hour').innerHTML = hour;
-	document.getElementById('min').innerHTML = min;
-	document.getElementById('sec').innerHTML = sec;
+// function countDownTimer(){
+//
+// 	var event_date = new Date(2019, 01, 07, 9, 00, 00);
+// 	var curr_date = new Date();
+// 	var t1 = event_date.getTime();
+// 	var t2 = curr_date.getTime();
+// 	var day = Math.floor((t1-t2)/(24*60*60*1000));
+// 	t1 = t1 - day*24*60*60*1000;
+// 	var hour = Math.floor((t1-t2)/(60*60*1000));
+// 	t1 = t1 - hour*60*60*1000;
+// 	var min = Math.floor((t1-t2)/(60*1000));
+// 	t1 = t1 - min*60*1000;
+// 	var sec = Math.floor((t1-t2)/(1000));
+//
+// 	document.getElementById('day').innerHTML = day;
+// 	document.getElementById('hour').innerHTML = hour;
+// 	document.getElementById('min').innerHTML = min;
+// 	document.getElementById('sec').innerHTML = sec;
+//
+// 	// console.log(event_date + "\n" + curr_date + "\n" + diff);
+// 	// console.log(day + "\n" + hour + "\n" + min + "\n" + sec);
+// }
 
-	// console.log(event_date + "\n" + curr_date + "\n" + diff);
-	// console.log(day + "\n" + hour + "\n" + min + "\n" + sec);
-}
-*/
 function print_dino_say(){
 	// printing a dino-say kinda dialogue to the console (if you modify it, please review the placements of slashes before pushing)
 	dinoSay = "\n\
@@ -187,12 +188,12 @@ function loadProgress() {
 
 
 $(document).ready(function(){
-	$('.landing-slide').slick({
+	$('.winner-slide').slick({
 		autoplay:true,
 		autoplaySpeed:6000,
 		arrows:true,
-		prevArrow:'<button type="button" class="slick-prev" style="color:#3e3e3e;"></button>',
-		nextArrow:'<button type="button" class="slick-next" style="color:#3e3e3e;"></button>',
+		prevArrow:'<button type="button" class="slick-prev" style="color:#000000;"></button>',
+		nextArrow:'<button type="button" class="slick-next" style="color:#000000;"></button>',
 		dots: true,
 		slidesToShow:1,
 		slidesToScroll:1
