@@ -1,11 +1,11 @@
   // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyD1hqg93PixOlMrWQbEltSl4o8aP2K3ris",
-	authDomain: "err-404-9789c.firebaseapp.com",
-	databaseURL: "https://err-404-9789c.firebaseio.com",
-	projectId: "err-404-9789c",
-	storageBucket: "",
-	messagingSenderId: "847914300774"
+	apiKey: "AIzaSyBqBQf0qHnHGmmVPt6gNH_nBPfh17a9lH0",
+    authDomain: "err404v2.firebaseapp.com",
+    databaseURL: "https://err404v2.firebaseio.com",
+    projectId: "err404v2",
+    storageBucket: "err404v2.appspot.com",
+    messagingSenderId: "345612752893"
 };
 
 firebase.initializeApp(config);
@@ -31,24 +31,43 @@ database.ref("registration").on('value', (snapshot) => {
 function submitData(){
 	var submit = document.getElementById('submit');
 	var team_name = document.getElementById('team_name');
-	var name = document.getElementById('name');
-	var email = document.getElementById('email');
-	var count = document.getElementById("count");
-	var jain_count = document.getElementById("jain-count");
+	var lead_email = document.getElementById('lead_email');
 	var contact = document.getElementById('contact');
 	var college = document.getElementById('college');
+
+	var lead_name = document.getElementById('lead_name');
+	var lead_github = document.getElementById('lead_github');
+
+	var member_1_name = document.getElementById('member_1_name');
+	var member_1_github = document.getElementById('member_1_github');
+
+	var member_2_name = document.getElementById('member_2_name');
+	var member_2_github = document.getElementById('member_2_github');
+
+	var member_3_name = document.getElementById('member_3_name');
+	var member_3_github = document.getElementById('member_3_github');
+	
 	var input_list = document.querySelectorAll(".validate");
 
 	var s_t_name = team_name.value;
-	var s_name = name.value;
-	var s_email = email.value;
-	var s_count = count.value;
-	var s_jain_count = jain_count.value;
+	var s_email = lead_email.value;
 	var s_contact = contact.value;
 	var s_college = college.value;
 
+	var lead_name_value = lead_name.value;
+	var lead_github_value = lead_github.value;
+
+	var member_1_name_value = member_1_name.value;
+	var member_1_github_value = member_1_github.value;
+
+	var member_2_name_value = member_2_name.value;
+	var member_2_github_value = member_2_github.value;
+
+	var member_3_name_value = member_3_name.value;
+	var member_3_github_value = member_3_github.value;
+
+	var payment = document.getElementById("payment-box");
 	var s_agree_terms = document.getElementById("terms-box");
-	// console.log(s_count)
 
 	var valid_submission = true;
 	// checking if all submissions are valid
@@ -58,8 +77,6 @@ function submitData(){
 			valid_submission = false;
 		}
 	}
-
-
 	
 	// checking for correct phone number
 	if (s_contact.length < 8 || s_contact.length > 10){
@@ -67,13 +84,13 @@ function submitData(){
 		valid_submission = false;
 	}
 
-	if (s_count == 0){
-		valid_submission = false;
-	}
+	// if (s_count == 0){
+	// 	valid_submission = false;
+	// }
 
 
 	// TODO: show the team name that they've registered with to repeated users
-	if (valid_submission && s_agree_terms.checked) {
+	if (valid_submission && s_agree_terms.checked && payment.checked) {
 		if (registered_emails.includes(s_email)){
 			// email id already exists
 			Materialize.toast("You've already registered for the event.", 4000);
@@ -83,12 +100,22 @@ function submitData(){
 			var new_ref = database.ref('registration').push();
 			new_ref.set({
 				team_name: s_t_name,
-				name: s_name,
+				email: s_email,
 				contact: s_contact,
 				college: s_college,
-				email: s_email,
-				count: s_count,
-				jain_count: s_jain_count,
+
+				lead_name: lead_name_value,
+				lead_github: lead_github_value,
+
+				member_1_name: member_1_name_value,
+				member_1_github: member_1_github_value,
+
+				member_2_name: member_2_name_value,
+				member_2_github: member_2_github_value,
+
+				member_3_name: member_3_name_value,
+				member_3_github: member_3_github_value,
+				
 			});
 
 			// reset the form

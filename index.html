@@ -59,7 +59,7 @@
     <div class="navbar-fixed">
         <nav class="grey darken-4 z-depth-0">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo oswald yellow-accent">ERR_404</a>
+                <a href="#" class="brand-logo oswald yellow-accent">ERR_404 2.0</a>
                 <a href="#" data-activates="mobile-nav" class="button-collapse">
                     <i class="material-icons">menu</i>
                 </a>
@@ -95,7 +95,7 @@
                         <a href="#schedule-section" class="waves-effect waves-teal">SCHEDULE</a>
                     </li>
                     <li>
-                        <a href="#winners-section" class="waves-effect waves-teal">MEMORIES</a>
+                        <a href="#winners-section" class="waves-effect waves-teal">PAST WINNERS</a>
                     </li>
                     <li>
                         <a href="#faq-section" class="waves-effect waves-teal">FAQ's</a>
@@ -146,7 +146,7 @@
             <a href="#schedule-section" class="waves-effect waves-teal">SCHEDULE</a>
         </li>
         <li>
-            <a href="#winners-section" class="waves-effect waves-teal">MEMORIES</a>
+            <a href="#winners-section" class="waves-effect waves-teal">PAST WINNERS</a>
         </li>
         <li>
             <a href="#faq-section" class="waves-effect waves-teal">FAQ's</a>
@@ -514,16 +514,16 @@
     <div class="side-gfx"></div>
     <div class="container">
         <h2 class="center light-heading">Rules and regulations!</h2>
-        <p class="light-heading flow-text">
-            Teams can be anywhere from one to five members. To ensure a level field for all contestants, all code,
+        <p class="light-heading center flow-text">
+            Teams can be anywhere from two to four members. To ensure a level field for all contestants, all code,
             design and assets
             must be created during the duration of the Hackathon. You are, however, free to make plans, create
             wireframes, and brainstorm
-            prior to the event. you are allowed to use 3rd party services, APIs, open source projects, libraries, and
-            frameworks.
-            All teams retain full ownership of what they have created during the Hackathon. There will be no
+            prior to the event. You are allowed to use 3rd party services, APIs, open source projects, libraries, and
+            frameworks. <br>
+            There will be no
             alcohol,smoking allowed
-            at the event. Behave professionally. Remember that harassment and racist, sexist, or exclusionary jokes are
+            at the event. Behave professionally. <br> Remember that harassment and racist, sexist, or exclusionary jokes are
             not appropriate
             for this event*. Attendees violating these rules may be asked to leave the Hackathon at the sole discretion
             of the Hackathon
@@ -549,15 +549,15 @@
                         following, harassing
                         photography or recording, sustained disruption of talks or other events, inappropriate physical
                         contact.
-                        <br> If what you’re doing is making someone feel uncomfortable, that counts as harassment and is
+                        <br><br> If what you’re doing is making someone feel uncomfortable, that counts as harassment and is
                         enough reason to stop
                         doing it. Be careful and mindful of the words that you choose.
-                        <br> Remember that exclusionary comments and hacks can be offensive to those around you.
+                        <br><br> Remember that exclusionary comments and hacks can be offensive to those around you.
                         Participants asked to stop any
                         harassing behavior are expected to comply immediately.
-                        <br> Sponsors, judges, mentors, volunteers, organizers, and anyone else at the event are also
+                        <br><br> Sponsors, judges, mentors, volunteers, organizers, and anyone else at the event are also
                         expected to follow the same.
-                        <br> In particular, attendees should not use sexualised images, activities, or other material
+                        <br><br> In particular, attendees should not use sexualised images, activities, or other material
                         both in their hacks and
                         during the event. If a participant engages in harassing behavior, organizers may take any action
                         they deem appropriate,
@@ -643,6 +643,7 @@
         <li>Vehicles will not be allowed to park in the campus.</li>
         <li>It is necessary to get a signed copy of the undertaking. You can find it below.</li>
         </p>
+        <h4>The problem statements will be released one day before the event</h4>
         <br>
         <div class="row center time-font">
             <a class="btn waves-effect waves-teal white grey-text text-darken-4" href="err_404_undertaking.pdf"
@@ -656,36 +657,110 @@
 
 <!-- Registration -->
 <div id="registration-section" class="container-fluid section grey lighten-5 scrollspy">
-    <div class="container row">
+    <div class="container-fluid row">
         <h2 class="center dark-heading">Interested in coming over?</h2>
-        <h5 class="center dark-heading">Registrations are now closed</h5>
+        <!-- <h5 class="center dark-heading">Registrations are now closed</h5> -->
         <form class="col l6 m6 s12 offset-l3 offset-m3" id="registration-form">
             <div class="row">
                 <div class="input-field col l12 m12 s12">
                     <i class="material-icons prefix">group</i>
-                    <input disabled id="team_name" type="text" class="validate">
+                    <input id="team_name" type="text" class="validate">
                     <label for="team_name">Team Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input disabled id="name" type="text" class="validate">
-                    <label for="name">Lead Member Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">email</i>
-                    <input disabled id="email" type="email" class="validate">
-                    <label for="name" data-error="Please enter a valid email address">Lead Member Email ID</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col l12 m12 s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="contact" type="tel" pattern="^\d{10}$" class="validate">
+                    <label for="contact" data-error="Please enter a correct phone number">Team Leader Contact</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="lead_email" type="email" class="validate">
+                    <label for="lead_email" data-error="Please enter a valid email address">Team Leader Email ID</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="lead_name" type="text" class="validate">
+                    <label for="lead_name">Team Leader Name</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">device_hub</i>
+                    <input id="lead_github" type="text" class="validate">
+                    <label for="lead_github" data-error="Please enter a valid email address">Team Leader Github Id</label>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_1_name" type="text" class="validate">
+                    <label for="member_1_name">First Member Name</label>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_1_name" type="text" class="validate">
+                    <label for="member_1_name">First Member Name</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">device_hub</i>
+                    <input id="member_1_github" type="text" class="validate">
+                    <label for="member_1_github" data-error="Please enter a valid email address">First Member Github Id</label>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_2_name" type="text" class="validate">
+                    <label for="member_2_name">Second Member Name</label>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_2_name" type="text">
+                    <label for="member_2_name">Second Member Name</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">device_hub</i>
+                    <input id="member_2_github" type="text">
+                    <label for="member_2_github" data-error="Please enter a valid email address">Second Member Github Id</label>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_3_name" type="text" class="validate">
+                    <label for="member_3_name">Third Member Name</label>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="member_3_name" type="text">
+                    <label for="member_3_name">Third Member Name</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                    <i class="material-icons prefix">device_hub</i>
+                    <input id="member_3_github" type="text">
+                    <label for="member_3_github" data-error="Please enter a valid email address">Third Member Github Id</label>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="input-field col l12 m12 s12">
                     <i class="material-icons prefix">format_list_numbered</i>
-                    <select disabled class="" id="count">
+                    <select class="" id="count">
                         <option value="0">Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -693,14 +768,14 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <label>Team Members Count</label>
+                    <label>Team Members Count (including Team Lead)</label>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="input-field col l12 m12 s12">
                     <i class="material-icons prefix">person_outline</i>
-                    <select disabled class="" id="jain-count">
+                    <select class="" id="jain-count">
                         <option value="0">For special food arrangements</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -710,25 +785,18 @@
                     </select>
                     <label>Number of Jain team members (if any)</label>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">phone</i>
-                    <input disabled id="contact" type="number" class="validate">
-                    <label for="contact" data-error="Please enter a correct phone number">Contact</label>
-                </div>
-            </div>
             <div class="row no-margin-bottom">
                 <div class="input-field col l12 m12 s12">
                     <i class="material-icons prefix">school</i>
-                    <input disabled id="college" type="text" class="validate autocomplete">
+                    <input id="college" type="text" class="validate autocomplete">
                     <label for="college">College</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col l12 m12 s12">
-                    <input disabled type="checkbox" class="filled-in" id="terms-box"/>
+                    <input type="checkbox" class="filled-in" id="terms-box"/>
                     <label for="terms-box" class="terms-and-conditions">I Accept the
                         <a href="#rules-section">Rules</a> & have read the
                         <a href="#guidelines-section">Guidelines</a>
@@ -736,7 +804,7 @@
                 </div>
             </div>
             <div class="row center margin">
-                <div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="regClosed()">SUBMIT</div>
+                <div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="submitData()">SUBMIT</div>
             </div>
 
         </form>
@@ -767,7 +835,7 @@
 <div id="winners-section" class="container-fluid section  darken-4 scrollspy valign-wrapper">
     <div class="row container center">
         <!--<div class="col s16 m16 l16">-->
-        <h2 class="center dark-heading">Memories</h2>
+        <h2 class="center dark-heading">Past Winners</h2>
         <br>
         <br>
         <div class="winner-slide">
@@ -803,7 +871,7 @@
                     <h5 class="dark-heading">M.H. Saboo Siddik College of Engineering, Mumbai</h5>
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <img class="responsive-img" style="width : 100%;" src="assets/PostHackathon/IMG (4).jpg">
             </div>
             <div>
@@ -829,7 +897,7 @@
             </div>
             <div>
                 <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (1).jpg">
-            </div>
+            </div> -->
         </div>
         <!--</div>-->
     </div>
@@ -925,7 +993,7 @@
 <!--Footer Section-->
 <footer class="page-footer grey darken-4 ">
     <div class="container ">
-        <div class="row light-heading margin">
+        <div class="row center light-heading">
 
             <!-- <div class="col l4 s12">
 
@@ -935,18 +1003,18 @@
                 </div> -->
 
             <div class="col xl3 l3 m6 s12">
-                <h5>Staff Co-ordinators -</h5>
+                <h5>Staff Co-ordinators</h5>
                 <ul>
                     <li>
                         <b>Mrs. Shabana Tadvi</b> - shabana.tadvi@mhssce.ac.in
-                    </li>
+                    </li><br>
                     <li>
                         <b>Mr. Mohd Ahmed Shaikh</b> - ahmed@mhssce.ac.in
                     </li>
                 </ul>
             </div>
             <div class="col  xl3 l3 m6 s12 ">
-                <h5>Student Co-ordinators -</h5>
+                <h5>Student Co-ordinators</h5>
                 <ul>
                     <li class="big">Praneet Bomma</li>
                     <li class="big">Mohammed Muteeullah</li>
@@ -955,10 +1023,10 @@
             </div>
 
             <div class="col xl3 l3 m6 s12">
-                <h5>Social Links :</h5>
+                <h5>Social Links</h5>
                 <ul>
                     <li>
-                        <a class="light-heading big" href="https://www.facebook.com/err404hackathon"
+                        <a class="light-heading big" href="https://www.facebook.com/err404mhss"
                            target="_blank">Facebook</a>
                     </li>
                     <li>
@@ -969,29 +1037,29 @@
                         <a class="light-heading big" href="https://www.twitter.com/err404hackathon"
                            target="_blank">Twitter</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="light-heading big" href="https://github.com/TheProgrammersClub"
                            target="_blank">Github</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <br>
             </div>
 
             <div class="col xl3 l3 m6 s12">
-                <h5>Contact Us :</h5>
+                <h5>Contact Us</h5>
                 <ul>
-                    <li class="light-heading big">csi@mhssce.ac.in</li>
+                    <li class="light-heading big">programmersclub@mhssce.ac.in</li>
+                    <li class="light-heading big">hackathon_err404@mhssce.ac.in</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright ">
-        <div class="container center">
-            <div class="center">
-                <i class="material-icons" style="margin-right: 8px; color: #ff5252">favorite</i> 2018
-                TheProgrammersClub
+        <div class="container">
+            <div class="valign-wrapper" style="align-content: center">
+                <i class="material-icons" style="margin-right: 8px; color: #ff5252">favorite</i> 2019
+                The Programmers Club
             </div>
-            <!--<blockquote style="border-color: #ff5252" class="flow-text">No Copyright :)</blockquote>-->
+            <blockquote style="border-color: #ff5252" class="flow-text">No Copyright :)</blockquote>
         </div>
     </div>
 </footer>
@@ -1008,7 +1076,7 @@
 <!-- Materialize JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <!-- Firebase JS -->
-<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
 <!-- Scroll Reval -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <!-- Custom JS -->

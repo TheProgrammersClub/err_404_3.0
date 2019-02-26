@@ -100,7 +100,7 @@ $(document).ready( function () {
 	});
 
 	// logging dino-say
-	print_dino_say();
+	//print_dino_say();
 
 	// setInterval(countDownTimer, 1000);
 	

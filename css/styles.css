@@ -160,6 +160,7 @@ ul li a {
 .domain_icon {
     max-width: 150px;
     max-height: 150px;
+    opacity: 1 !important;
 }
 
 input[type=text]:focus:not([readonly]),
