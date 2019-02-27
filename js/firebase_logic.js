@@ -90,7 +90,7 @@ function submitData(){
 
 
 	// TODO: show the team name that they've registered with to repeated users
-	if (valid_submission && s_agree_terms.checked && payment.checked) {
+	if (valid_submission && s_agree_terms.checked) {
 		if (registered_emails.includes(s_email)){
 			// email id already exists
 			Materialize.toast("You've already registered for the event.", 4000);
