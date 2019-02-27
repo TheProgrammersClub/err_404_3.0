@@ -390,7 +390,7 @@ ul li a.active {
 
 @media only screen and (max-width: 400px) {
     .landing-title img {
-        width: 100%;
+        width: 120%;
     }
 
     .landing-sub {
