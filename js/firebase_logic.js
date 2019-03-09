@@ -97,7 +97,7 @@ function submitData(){
 		} else if (registered_teams.includes(s_t_name)) {
 			Materialize.toast("The team name has already been taken.", 4000);
 		} else {
-			var new_ref = database.ref('registration').child(s_t_name);
+			var new_ref = database.ref('registration').push();
 			new_ref.set({
 				team_name: s_t_name,
 				email: s_email,
