@@ -102,7 +102,7 @@ $(document).ready( function () {
 	// logging dino-say
 	//print_dino_say();
 
-	setInterval(countDownTimer, 500)
+	// setInterval(countDownTimer, 500)
 	
 });
 
