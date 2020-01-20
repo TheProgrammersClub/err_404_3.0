@@ -1,6 +1,3 @@
-
-
-
 // reference to scroll reveal
 var sr = ScrollReveal();
 

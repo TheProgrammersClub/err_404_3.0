@@ -50,7 +50,7 @@ body {
 .countdown-title {
     color: #212121;
     font-family: "Raleway", sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: 600;
     width: 100%;
@@ -60,7 +60,7 @@ body {
 .countdown-amount {
     color: #212121;
     font-family: "Oswald", sans-serif;
-    font-size: 7em;
+    font-size: 4em;
     text-transform: uppercase;
     width: 100%;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .section {
-    min-height: 90vh;
+    min-height: 50vh;
     position: relative;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -143,10 +143,14 @@ ul li a {
 /*Utility Classes*/
 
 .light-heading {
-    color: #fafafa;
+    color: #64ffda;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.light-para {
+    color: #fafafa;
+    font-family: 'Josefin Sans', sans-serif;
+}
 .dark-heading {
     color: #212121;
     font-family: 'Josefin Sans', sans-serif;
@@ -196,9 +200,9 @@ ul li a.active {
     padding-bottom: 20px;
 }
 
-.col p {
-    /*text-align: justify;*/
-}
+/* .col p {
+    text-align: justify;
+} */
 
 .content-font-size {
     font-size: 1.2em;
@@ -309,7 +313,7 @@ ul li a.active {
     border-radius: 50%;
     border: 2px solid #64FFDA;
     padding: 10px;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     background-color: #fff;
     overflow: hidden;
 }

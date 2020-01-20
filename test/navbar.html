@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- useful meta tags -->
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=.5,minimum-scale=.5,maximum-scale=.5,user-scalable=no" name="viewport">
+        <meta content="An event hosted by MHSSCE to promote the programming culture" name="description">
+        <meta
+        content="hackathon" name="keywords">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta
+        content="#212121" name="theme-color">
+        <!-- Windows Phone -->
+        <meta
+        content="#212121" name="msapplication-navbutton-color">
+        <!-- iOS Safari -->
+        <meta
+        content="#212121" name="apple-mobile-web-app-status-bar-style">
+        <!-- title -->
+        <title>ERR_404 3.0 | Hackathon</title>
+        <!-- favicon -->
+        <link
+        href="../assets/favicon.png" rel="icon" type="image/png">
+
+        <!-- CDN Imports -->
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
+        <script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body onload="loadProgress()">
+
+        <!-- Loader | starts-->
+        <div class="valign-wrapper" id="loader">
+            <div class="row">
+                <div class="col s12">
+                    <center>
+                        <div class="anim"></div>
+                        <div class="progress grey darken-4">
+                            <div class="indeterminate grey lighten-1"></div>
+                        </div>
+                        <p class="grey-text text-darken-2 light-heading flow-text">Loading...</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+        <img
+        alt="dino" src="../assets/favicon.png" style="position: fixed; right: 0; bottom: 0;width: 10vw; height: 10vw;">
+        <!-- Navbar -->
+        <div class="navbar--container sticky" id="nav--sticky">
+            <div class="navbar--title">
+                <h4>err_404 3.0</h4>
+            </div>
+            <div class="navbar--icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav--open close sticky">
+            <div class="nav--open-icon">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+                <a href="">home</a>
+                <a href="">hackathons</a>
+                <a href="">rules</a>
+                <a href="">guidelines</a>
+                <a href="">FAQs</a>
+            </div>
+        </div>
+
+        <section>
+            <h1>Hackathon
+                <br><span>Err_404 3.0</span>
+            </h1>
+        </section>
+
+        <!-- About Section -->
+        <section class="two">
+            <h1>What is ERR_404 3.0?</h1>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8" style="padding: 2em;">
+                    <p class="light">
+                        ERR_404 2.0 is the second iteration of 24hrs State Level Hackathon organised by Computer
+                                                                                                                                                                    Department of M. H. Saboo Siddik College of Engineering
+                        <br>
+                        <br>
+                        We call out all the cybernerds to come forth, compile your minds and execute your ideas in a
+                                                                                                                                                                    competitive environment.
+                        <br>
+                        The hackathon will run across the weekend which offers students the chance to work in
+                                                                                                                                                                    groups,
+                                                                                                                                                                    brainstorm ideas, and
+                                                                                                                                                                    build a working prototype before the time limit!
+                        <br>
+                        Whether it's your first hackathon, or your 50<sup>th</sup>, we would love to see students of all skill
+                                                                                                                                                                                            levels
+                                                                                                                                                                                            and from all colleges
+                                                                                                                                                                                            come along for a weekend of creativity, collaboration and coding.
+                        <br>
+                        Godspeed!
+                    </p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+        <section class="three">
+            <h1>I like to
+                <br><span class="light">design + code</span><br>
+                pretty things.</h1>
+        </section>
+        <section class="four">
+            <h1>you can
+                <br>follow me on
+                <br><a class="underline" href="https://instagram.com/julieparkim" target="_blank">instagram.</a>
+            </h1>
+        </section>
+
+
+        <!--Footer Section-->
+        <footer class="page-footer grey darken-4 three">
+            <div class="container ">
+                <div
+                    class="row center light-heading">
+
+                    <!-- <div class="col l4 s12">
+                                                            
+                                                                              <p><h5>Website developed and maintained by-</h5></p>
+                                                                              <p>The Programmers Club</p>
+                                                            
+                                                                          </div> -->
+
+                    <div class="col xl3 l3 m6 s12">
+                        <h5>Staff Co-ordinators</h5>
+                        <ul>
+                            <li>
+                                <b>Mrs. Shabana Tadvi</b>
+                                - shabana.tadvi@mhssce.ac.in
+                            </li><br>
+                            <li>
+                                <b>Mr. Mohd Ahmed Shaikh</b>
+                                - ahmed@mhssce.ac.in
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col  xl3 l3 m6 s12 ">
+                        <h5>Student Co-ordinators</h5>
+                        <ul>
+                            <li class="big">Praneet Bomma</li>
+                            <li class="big">Mohammed Muteeullah</li>
+                            <li class="big">Misbah Sayyed</li>
+                        </ul>
+                    </div>
+
+                    <div class="col xl3 l3 m6 s12">
+                        <h5>Social Links</h5>
+                        <ul>
+                            <li>
+                                <a class="light-heading big" href="https://www.facebook.com/err404mhss" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="light-heading big" href="https://www.instagram.com/err404hackathon" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="light-heading big" href="https://www.twitter.com/err404hackathon" target="_blank">Twitter</a>
+                            </li>
+                            <!-- <li>
+                                                                                                          <a class="light-heading big" href="https://github.com/TheProgrammersClub"
+                                                                                                             target="_blank">Github</a>
+                                                                                                      </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col xl3 l3 m6 s12">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li class="light-heading big">programmersclub@mhssce.ac.in</li>
+                            <li class="light-heading big">hackathon_err404@mhssce.ac.in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright ">
+                <div class="container">
+                    <div class="valign-wrapper" style="align-content: center">
+                        <i class="material-icons" style="margin-right: 8px; color: #ff5252">favorite</i>
+                        2019
+                                                                                          The Programmers Club
+                    </div>
+                    <blockquote class="flow-text" style="border-color: #ff5252">No Copyright :)</blockquote>
+                </div>
+            </div>
+        </footer>
+      </div>
+    </body>
+
+    <script>
+
+
+        function loadProgress() {
+
+            document.getElementById('loader').style.display = "none";
+            document.getElementById('main').style.display = "block";
+
+            // enable scroll when page loaded
+            document.getElementsByTagName("body")[0].style["overflow-y"] = "scroll";
+
+            // animate the logo after loader is removed load
+            main_pop_up_options = {
+                duration: 800,
+                distance: '20px',
+                scale: 1
+            };
+            sr.reveal(".main-logo", main_pop_up_options);
+        }
+
+        let open = document.querySelector('.navbar--icon');
+        let menu = document.querySelector('.nav--open');
+        let close = document.querySelector('.nav--open-icon');
+        var nav = document.getElementById('nav--sticky');
+
+        open.addEventListener('click', function () {
+            nav.style.visibility = "hidden";
+            menu.classList.toggle('close');
+
+        });
+
+
+        close.addEventListener('click', function () {
+            nav.style.visibility = "visible";
+            menu.classList.toggle('close');
+        })
+    </script>
+
+</html>

@@ -1,5 +1,5 @@
 
-$(document).ready( function () {
+$(document).ready(function () {
 
 	// initializing side nav
 	// $(".button-collapse").sideNav();
@@ -14,13 +14,13 @@ $(document).ready( function () {
 	});
 
 	$(".scrollspy").scrollSpy({
-		scrollOffset:60
+		scrollOffset: 60
 	});
 
 	$('select').material_select();
-	
-	$('.collapsible-header').click(function(){
-		
+
+	$('.collapsible-header').click(function () {
+
 		$(".rotating-span").removeClass('open');
 		$(".rotating-span").removeClass('open');
 		if (!($(this).hasClass("active")))
@@ -103,24 +103,24 @@ $(document).ready( function () {
 	//print_dino_say();
 
 	// setInterval(countDownTimer, 500)
-	
+
 });
 
 
-function countDownTimer(){
+function countDownTimer() {
 
-	var event_date = new Date(2019, 02, 16, 14, 00, 00);
+	var event_date = new Date(2020, 01, 29, 15, 00, 00);
 	var curr_date = new Date();
 	var t1 = event_date.getTime();
 	var t2 = curr_date.getTime();
-	
-	var day = Math.floor((t1-t2)/(24*60*60*1000));
-	t1 = t1 - day*24*60*60*1000;
-	var hour = Math.floor((t1-t2)/(60*60*1000));
-	t1 = t1 - hour*60*60*1000;
-	var min = Math.floor((t1-t2)/(60*1000));
-	t1 = t1 - min*60*1000;
-	var sec = Math.floor((t1-t2)/(1000));
+
+	var day = Math.floor((t1 - t2) / (24 * 60 * 60 * 1000));
+	t1 = t1 - day * 24 * 60 * 60 * 1000;
+	var hour = Math.floor((t1 - t2) / (60 * 60 * 1000));
+	t1 = t1 - hour * 60 * 60 * 1000;
+	var min = Math.floor((t1 - t2) / (60 * 1000));
+	t1 = t1 - min * 60 * 1000;
+	var sec = Math.floor((t1 - t2) / (1000));
 
 	document.getElementById('day').innerHTML = day;
 	document.getElementById('hour').innerHTML = hour;
@@ -131,7 +131,7 @@ function countDownTimer(){
 	// console.log(day + "\n" + hour + "\n" + min + "\n" + sec);
 }
 
-function print_dino_say(){
+function print_dino_say() {
 	// printing a dino-say kinda dialogue to the console (if you modify it, please review the placements of slashes before pushing)
 	dinoSay = "\n\
 	__________________________________________________________________________\n\
@@ -187,15 +187,36 @@ function loadProgress() {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.winner-slide').slick({
-		autoplay:true,
-		autoplaySpeed:6000,
-		arrows:true,
-		prevArrow:'<button type="button" class="slick-prev" style="color:#000000;"></button>',
-		nextArrow:'<button type="button" class="slick-next" style="color:#000000;"></button>',
+		autoplay: true,
+		autoplaySpeed: 6000,
+		arrows: true,
+		prevArrow: '<button type="button" class="slick-prev" style="color:#000000;"></button>',
+		nextArrow: '<button type="button" class="slick-next" style="color:#000000;"></button>',
 		dots: true,
-		slidesToShow:1,
-		slidesToScroll:1
+		slidesToShow: 1,
+		slidesToScroll: 1
 	});
-  });
+});
+
+// Navigation bar
+
+let open = document.querySelector('.navbar--icon');
+let menu = document.querySelector('.nav--open');
+let close = document.querySelector('.nav--open-icon');
+var nav = document.getElementById('nav--sticky');
+
+open.addEventListener('click', function () {
+	nav.style.visibility = "hidden";
+	menu.classList.toggle('close');
+
+});
+
+
+close.addEventListener('click', function () {
+	nav.style.visibility = "visible";
+	menu.classList.toggle('close');
+})
+
+setInterval(countDownTimer, 1000);

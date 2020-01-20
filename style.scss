@@ -1,0 +1,181 @@
+// @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
+
+// $bold: 'Oswald', sans-serif;
+// $abril: 'Abril Fatface', serif;
+// $serif: 'Playfair Display', serif;
+
+$cyan: #64ffda;
+$dark: #212121;
+// $grey: #333333;
+
+$ease-slow: all 0.4s ease-out;
+
+a {
+  text-decoration: none;
+  color: $dark;
+  &:hover {
+    // background: $dark;
+    color: $cyan;
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 10;
+}
+.navbar--container {
+  top: 15%;
+  color: $dark;
+  background: $cyan;
+  right: 0;
+  height: 250px;
+  width: 90px;
+  box-shadow: 2px 2px 15px rgba($cyan, 0.5);
+  visibility: visible;
+}
+
+.navbar--icon {
+  margin-bottom: 49px;
+  margin-left: 49px;
+  font-size: 1.2em;
+  &:hover {
+    color: $dark;
+    cursor: pointer;
+  }
+}
+.navbar--title {
+  margin-left: 50px;
+  margin-top: 20px;
+  h4 {
+    writing-mode: vertical-rl;
+    // font-family: $bold;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: $dark;
+  }
+}
+
+//navigation open
+
+.nav--open {
+  height: 80vh;
+  width: 300px;
+  right: 0;
+  // top: 20vh;
+  // background: rgba(100, 255, 219, 0.397);
+  transition: $ease-slow;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba($cyan, 0.5);
+  backdrop-filter: blur(5px);
+  background: $dark;
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+  i {
+    font-size: 1.8em;
+    color: $cyan;
+    &:hover {
+      color: $dark;
+      background: $cyan;
+      cursor: pointer;
+    }
+  }
+}
+
+.nav--open-title {
+  // font-family: $serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 10%;
+  color: $cyan;
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  a {
+    font-size: 2em;
+    font-weight: 100;
+    // font-family: $serif;
+    padding: 15px 0;
+    color: $cyan;
+    text-decoration: none;
+    &:hover {
+      background: $dark;
+      box-shadow: 2px 2px 15px rgba($cyan, 0.5);
+    }
+  }
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: $ease-slow;
+  opacity: 0;
+}
+
+#register {
+  height: 100%;
+  margin-top: 2em;
+  background: $cyan;
+  color: $dark;
+  &:hover {
+    background: $dark;
+    color: $cyan;
+    box-shadow: 5px 5px 25px rgba($cyan, 0.5);
+  }
+}
+
+.main{
+  margin-top: 20vh;
+}
+// Countdown Timer
+.countdown {
+  width: 100vw;
+  height: 20vh;
+  z-index: 9;
+  bottom:0;
+  margin-bottom: 0;
+}
+
+// Glow on Hover
+.glow-light {
+  &:hover {
+    box-shadow: 2px 2px 15px rgba($cyan, 0.5);
+  }
+}
+
+.glow-dark {
+  &:hover {
+    box-shadow: 2px 2px 15px rgba($dark, 0.5);
+  }
+}
+
+// landing Section
+#landing-section {
+  // height: 600px;\
+  top: 0 !important;
+}
+
+// Scroll Bar
+
+::-webkit-scrollbar {
+  width: 10px;          
+}
+
+::-webkit-scrollbar-thumb {   
+ border-radius: 10px;
+ background: linear-gradient(to top, $dark, $cyan, $dark);
+//  box-shadow: inset 2px 2px 2px rgba($dark, 0.5), inset 2px 2px 2px rgba($dark, 0.5);
+}
+
+::-webkit-scrollbar-track {     
+ background: $dark;
+}

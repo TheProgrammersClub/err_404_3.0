@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- useful meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=.5,minimum-scale=.5,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="An event hosted by MHSSCE to promote the programming culture">
+    <meta name="keywords" content="hackathon">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#212121">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+    <!-- title -->
+    <title>ERR_404 3.0 | Hackathon</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
+    <!--Slick for slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProgress()">
+
+
+    <!-- Loader | starts-->
+    <div id="loader" class="valign-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <center>
+                    <div class="anim"></div>
+                    <div class="progress grey darken-4">
+                        <div class="indeterminate grey lighten-1"></div>
+                    </div>
+                    <p class="grey-text text-darken-2 light-heading flow-text">Loading...</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Loader | ends -->
+
+    <!-- main body | starts -->
+    <div id="main" class="grey darken-4">
+
+        <!-- Nav bar section -->
+        <div class="navbar--container sticky" id="nav--sticky">
+            <div class="navbar--title">
+                <h4>err_404 3.0</h4>
+                <img src="assets/favicon.png" alt="" style="width: 20px; height: 20px;">
+            </div>
+            <div class="navbar--icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav--open close sticky">
+            <div class="nav--open-icon">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+                <a href="t.html">home</a>
+                <a href="">hackathons</a>
+                <a href="sponsors.html">sponsors</a>
+                <a href="t.html#rules-section">rules</a>
+                <a href="t.html#guidelines-section">guidelines</a>
+                <a href="t.html#faq-section">FAQs</a>
+            </div>
+        </div>
+
+        <div class="row grey darken-4 countdown sticky">
+            <div class="row center">
+                <div class="col s12 m12 l2 light-heading">
+                    <h3>ERR_404 3.0</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="day"></span>
+                    <h3 class="countdown-title light-para">Days</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="hour"></span>
+                    <h3 class="countdown-title light-para">Hours</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="min"></span>
+                    <h3 class="countdown-title light-para">Mins</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="sec"></span>
+                    <h3 class="countdown-title light-para">Secs</h3>
+                </div>
+                <div class="col s12 m12 l2 ">
+                    <a id="register" class="btn waves-effect waves-teal" href="#">
+                        <h5 class="light-para">Registrations
+                            Openning Shortly!!</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="row center">
+                <a id="register" class="btn waves-effect waves-teal grey darken-4 light-heading" href="#">Registrations
+                    Open
+                </a>
+            </div> -->
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Sponsors -->
+        <div id="sponsors-section" class="container-fluid section grey darken-4 scrollspy prize-gfx valign-wrapper" style="margin-top: 0; margin-bottom: 0; top:20vh">
+            <!-- <div class="side-gfx side-gfx-left"></div> -->
+
+            <div class="container">
+                <h2 class="center light-heading">Our Sponsors</h2>
+                <div class="sponsors-container">
+                    <div class="row">
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.sogosurvey.com/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Title Sponsor</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/sogosurvey_logo.svg"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.sogosurvey.com/"
+                                        target="_blank">SoGoSurvey</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="http://www.mobicule.com/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Co Sponsor</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/mobicule.png" class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="http://www.mobicule.com/"
+                                        target="_blank">Mobicule</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.pixtrans.com/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Associate</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/pixlogo.png" class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.pixtrans.com/"
+                                        target="_blank">Pix
+                                        Transmission</a>
+                                </center>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.competekaro.com" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Competition <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/competekaro.png"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.competekaro.com"
+                                        target="_blank">CompeteKaro</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.ambriona.com/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Dessert <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/ambriona.png" class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.ambriona.com/"
+                                        target="_blank">Ambriona</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.codingninjas.in/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Coding <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/coding_ninjas.svg"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.codingninjas.in/"
+                                        target="_blank">Coding Ninjas</a>
+                                </center>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4 l4 ">
+                            <a href="http://simpliforge.com/" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">3D Printing <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/Simpliforge Logo.png"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="http://simpliforge.com/"
+                                        target="_blank">Simpliforge</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.monsterenergy.com" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Energy <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/monster_logo.png" width="50px" height="150px"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.monsterenergy.com/"
+                                        target="_blank">Monster</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="http://noescape.in" target="_blank">
+                                <center>
+                                    <h4 class="center light-para">Fun <br> Partner</h4>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/noescape_burned.png"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="#" target="_blank">No Escape</a>
+                                </center>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4 class="center light-para">Knowledge Partners</h4>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.tcs.com/" target="_blank">
+                                <center>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/tcs.png" class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.tcs.com/"
+                                        target="_blank">TCS</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://difference-engine.ai" target="_blank">
+                                <center>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/difference-engine-logo-crop.png"
+                                            class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://difference-engine.ai/"
+                                        target="_blank">Difference Engine</a>
+                                </center>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 l4 ">
+                            <a href="https://www.neebal.com/" target="_blank">
+                                <center>
+                                    <div class="sponsors-logo-div valign-wrapper">
+                                        <img src="./assets/sponsors/neebal.png" class="responsive-img sponsors-img">
+                                    </div>
+                                    <br>
+                                    <a class="light-heading flow-text" href="https://www.neebal.com/"
+                                        target="_blank">Neebal</a>
+                                </center>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+        
+
+    </div>
+
+    
+    <!-- main body | ends -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- Firebase JS
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script> -->
+    <!-- Scroll Reval -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/animation_logic.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/firebase_logic.js"></script> -->
+    <!--SLICK-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>
