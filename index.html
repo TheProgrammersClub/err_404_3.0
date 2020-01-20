@@ -5,7 +5,8 @@
     <!-- useful meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=.5,minimum-scale=.5,maximum-scale=1,user-scalable=no">
     <meta name="description" content="An event hosted by MHSSCE to promote the programming culture">
     <meta name="keywords" content="hackathon">
     <!-- Chrome, Firefox OS and Opera -->
@@ -15,37 +16,40 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
     <!-- title -->
-    <title>ERR_404 2.0 | Hackathon</title>
+    <title>ERR_404 3.0 | Hackathon</title>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
     <!--Slick for slider-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <!-- Add the new slick-theme.css if you want the default styling-->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
+    <!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="loadProgress()">
 
 
     <!-- Loader | starts-->
-    <div id="loader" class="valign-wrapper">
+    <div id="loader" class="valign-wrapper grey darken-4">
         <div class="row">
             <div class="col s12">
                 <center>
                     <div class="anim"></div>
-                    <div class="progress grey darken-4">
-                        <div class="indeterminate grey lighten-1"></div>
+                    <div class="progress" style="background: #5a5a5a">
+                        <div class="indeterminate" style="color: #64ffda"></div>
                     </div>
-                    <p class="grey-text text-darken-2 light-heading flow-text">Loading...</p>
+                    <p class="light-heading flow-text">Loading...</p>
                 </center>
             </div>
         </div>
@@ -56,232 +60,104 @@
     <div id="main" class="grey lighten-5">
 
         <!-- Nav bar section -->
-        <div class="navbar-fixed">
-            <nav class="grey darken-4 z-depth-0">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo oswald yellow-accent">ERR_404 2.0</a>
-                    <a href="#" data-activates="mobile-nav" class="button-collapse">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a href="#landing-section" class="waves-effect waves-teal">HOME</a>
-                        </li>
-                        <li>
-                            <a href="#winners-section" class="waves-effect waves-teal">WINNERS</a>
-                        </li>
-                        <li>
-                            <a href="#about-us-section" class="waves-effect waves-teal">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#domains-section" class="waves-effect waves-teal">DOMAINS</a>
-                        </li>
-                        <li>
-                            <a href="#sponsors-section" class="waves-effect waves-teal">OUR SPONSORS</a>
-                        </li>
-                        <li>
-                            <a href="#prizes-section" class="waves-effect waves-teal">PRIZES</a>
-                        </li>
-                        <li>
-                            <a href="#rules-section" class="waves-effect waves-teal">RULES</a>
-                        </li>
-                        <li>
-                            <a href="#venue-section" class="waves-effect waves-teal">VENUE</a>
-                        </li>
-                        <li>
-                            <a href="#guidelines-section" class="waves-effect waves-teal">GUIDELINES</a>
-                        </li>
-                        <li>
-                            <a href="#registration-section" class="waves-effect waves-teal">REGISTER</a>
-                        </li>
-                        <li>
-                            <a href="#schedule-section" class="waves-effect waves-teal">SCHEDULE</a>
-                        </li>
-                        <li>
-                            <a href="#faq-section" class="waves-effect waves-teal">FAQ's</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="navbar--container sticky" id="nav--sticky">
+            <div class="navbar--title">
+                <h4>err_404 3.0</h4>
+                <img src="assets/favicon.png" alt="" style="width: 20px; height: 20px;">
+            </div>
+            <div class="navbar--icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav--open close sticky">
+            <div class="nav--open-icon">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+                <a href="index.html">home</a>
+                <a href="">hackathons</a>
+                <a href="sponsors.html">sponsors</a>
+                <a href="index.html#rules-section">rules</a>
+                <a href="index.html#guidelines-section">guidelines</a>
+                <a href="index.html#faq-section">FAQs</a>
+            </div>
         </div>
 
-        <!-- Side nav -->
-        <ul class="side-nav" id="mobile-nav">
-            <li>
-                <h1 class="side-nav-header oswald yellow-accent center-align">ERR_404 2.0
-                    <br>
-                    <span>
-                        <h4 class="grey-text text-darken-4">HACK NOT FOUND</h4>
-                    </span>
-                </h1>
-            </li>
-            <li>
-                <a href="#landing-section" class="waves-effect waves-teal">HOME</a>
-            </li>
-            <li>
-                <a href="#winners-section" class="waves-effect waves-teal">WINNERS</a>
-            </li>
-            <li>
-                <a href="#about-us-section" class="waves-effect waves-teal">ABOUT</a>
-            </li>
-            <li>
-                <a href="#domains-section" class="waves-effect waves-teal">DOMAINS</a>
-            </li>
-            <li>
-                <a href="#sponsors-section" class="waves-effect waves-teal">OUR SPONSORS</a>
-            </li>
-            <li>
-                <a href="#prizes-section" class="waves-effect waves-teal">PRIZES</a>
-            </li>
-            <li>
-                <a href="#rules-section" class="waves-effect waves-teal">RULES</a>
-            </li>
-            <li>
-                <a href="#venue-section" class="waves-effect waves-teal">VENUE</a>
-            </li>
-            <li>
-                <a href="#guidelines-section" class="waves-effect waves-teal">GUIDELINES</a>
-            </li>
-            <li>
-                <a href="#registration-section" class="waves-effect waves-teal">REGISTER</a>
-            </li>
-            <li>
-                <a href="#schedule-section" class="waves-effect waves-teal">SCHEDULE</a>
-            </li>
-            <li>
-                <a href="#faq-section" class="waves-effect waves-teal">FAQ's</a>
-            </li>
-        </ul>
+        <div class="row grey darken-4 countdown sticky">
+            <div class="row center">
+                <div class="col s12 m12 l2 light-heading">
+                    <!-- <h3>ERR_404 3.0</h3> -->
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="day"></span>
+                    <h3 class="countdown-title light-para">Days</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="hour"></span>
+                    <h3 class="countdown-title light-para">Hours</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="min"></span>
+                    <h3 class="countdown-title light-para">Mins</h3>
+                </div>
+                <div class="col m3 l2 ">
+                    <span class="countdown-amount light-heading" id="sec"></span>
+                    <h3 class="countdown-title light-para">Secs</h3>
+                </div>
+                
+            </div>
 
+            <!-- <div class="row center">
+                <a id="register" class="btn waves-effect waves-teal grey darken-4 light-heading" href="#">Registrations
+                    Open
+                </a>
+            </div> -->
+        </div>
 
         <!-- landing page section -->
-        <div id="landing-section" class="container-fluid section valign-wrapper grey lighten-5 scrollspy">
-            <div class="row container center">
+        <div id="landing-section" class="container-fluid section valign-wrapper grey lighten-5 scrollspy"
+            style="margin-top: 0; margin-bottom: 0; top:20vh">
+
+            <div class="row center">
                 <div class="col s16 m16 l16">
-
-                    <div class="landing-title"><img src="./assets/dino2_0.gif"></div>
+                    <img src="./assets/favicon.png" style="height: 75px; width: 75px;">
+                    <div class="landing-title text-flow dark-heading">ERR_404 3.0<br>Hack Evolution</div>
                     <br>
-
-                    <!-- <span><h3 id="day">00</h3>
-                <h3 id="hour">00</h3>
-                <h3 id="min">00</h3>
-                <h3 id="sec">00</h3></span> -->
-                    <!-- <h1>
-                    <div id="day"></div>
-                    <div id="hour"></div>
-                    <div id="min"></div>
-                    <div id="sec"></div>
-                </h1> -->
                 </div>
+                
+            </div>
+            
 
-                <div class="row center">
-                    <div class="col s12 m12 l2"></div>
-                    <div class="col s6 m6 l2 ">
-                        <span class="countdown-amount" id="day"></span>
-                        <h3 class="countdown-title">Days</h3>
-                    </div>
-                    <div class="col s6 m6 l2 ">
-                        <span class="countdown-amount" id="hour"></span>
-                        <h3 class="countdown-title">Hours</h3>
-                    </div>
-                    <div class="col s6 m6 l2 ">
-                        <span class="countdown-amount" id="min"></span>
-                        <h3 class="countdown-title">Mins</h3>
-                    </div>
-                    <div class="col s6 m6 l2 ">
-                        <span class="countdown-amount" id="sec"></span>
-                        <h3 class="countdown-title">Secs</h3>
-                    </div>
-                    <div class="col s12 m12 l2"></div>
+            <!-- <div class="row">
+                <div class="col m3 l2">
+                    <img class="landing-dino" src="./assets/favicon.png">
+                    <br>
                 </div>
-                <div class="row center margin">
-                    <a id="register" class="btn waves-effect waves-teal grey darken-4" href="#">Registrations Closed
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Winners -->
-    <div id="winners-section" class="container-fluid section  darken-4 scrollspy valign-wrapper">
-        <div class="row container center">
-            <!--<div class="col s16 m16 l16">-->
-            <h2 class="center dark-heading">Winners</h2>
-            <br>
-            <br>
-            <div class="winner-slide">
-                <div>
-                    <img class="responsive-img" style="max-width : 100%;" src="assets/winners/version_2/1st.jpg">
-                    <div class="caption" style="top: 65%">
-                        <h4 class="dark-heading">1st Prize: CSP22</h4>
-                        <h5 class="dark-heading">M.H. Saboo Siddik College of Engineering</h5>
-                    </div>
-                </div>
-                <div>
-
-                    <img class="responsive-img" style="max-width : 100%;" src="assets/winners/version_2/2nd.jpg">
-                    <div class="caption" style="top: 65%">
-                        <h4 class="dark-heading">2nd Prize: ImagiNation</h4>
-                        <h5 class="dark-heading">Vidyavardhini's College of Engineering and Technology</h5>
-                    </div>
-                </div>
-                <div>
-
-                    <img class="responsive-img" style="max-width : 100%;" src="assets/winners/version_2/3rd.jpg">
-                    <div class="caption" style="top: 65%">
-                        <h4 class="dark-heading">3rd Prize: InoApk.ai</h4>
-                        <h5 class="dark-heading">SIES Graduate School of Technology</h5>
-                    </div>
-                </div>
-                <div>
-
-                    <img class="responsive-img" style="max-width : 100%;" src="assets/winners/version_2/female.jpg">
-                    <div class="caption" style="top: 65%">
-                        <h4 class="dark-heading">Best Female Hackers: House Stack</h4>
-                        <h5 class="dark-heading">Fr. Conceicao Rodrigues College of Engineering, Bandra(W)</h5>
-                    </div>
-                </div>
-                <!-- <div>
-                <img class="responsive-img" style="width : 100%;" src="assets/PostHackathon/IMG (4).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (6).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (7).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (8).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (9).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (10).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (3).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (2).jpg">
-            </div>
-            <div>
-                <img class="responsive-img" style="max-width : 100%;" src="assets/PostHackathon/IMG (1).jpg">
+                <div class="col m3 l2"></div>
+                <div class="col m3 l2"></div>
             </div> -->
-            </div>
-            <!--</div>-->
+            
+            
         </div>
-    </div>
+        <div class="row container center">
+            <div class="col s12 m12 l4 "></div>
+        <div class="col s12 m12 l4 ">
+            <a id="register" class="btn waves-effect waves-teal" href="#">
+                <h4>Coming Soon</h4>
+            </a>
+        </div>
+        <div class="col s12 m12 l4 "></div>
+        </div>
 
         <!-- About -->
         <div id="about-us-section" class="container-fluid section grey darken-4 scrollspy valign-wrapper">
             <div class="side-gfx"></div>
             <div class="container row ">
                 <div class="col s12">
-                    <h2 class="center light-heading">What is ERR_404 2.0?</h2>
-                    <p class="light-heading flow-text">
-                        ERR_404 2.0 is the second iteration of 24hrs State Level Hackathon organised by Computer
+                    <h2 class="center light-heading">What is ERR_404 3.0?</h2>
+                    <p class="light-para flow-text">
+                        ERR_404 3.0 is the third iteration of 24hrs State Level Hackathon organised by Computer
                         Department of M. H. Saboo Siddik College of Engineering <br> <br>
                         We call out all the cybernerds to come forth, compile your minds and execute your ideas in a
                         competitive environment.
@@ -409,741 +285,434 @@
         </div>
 
 
-        <!-- Sponsors -->
-        <div id="sponsors-section" class="container-fluid section grey darken-4 scrollspy prize-gfx valign-wrapper">
-            <!-- <div class="side-gfx side-gfx-left"></div> -->
-
-            <div class="container">
-                <h2 class="center light-heading">Our Sponsors</h2>
-                <div class="sponsors-container">
-                    <div class="row">
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.sogosurvey.com/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Title Sponsor</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/sogosurvey_logo.svg"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.sogosurvey.com/"
-                                        target="_blank">SoGoSurvey</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="http://www.mobicule.com/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Co Sponsor</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/mobicule.png" class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="http://www.mobicule.com/"
-                                        target="_blank">Mobicule</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.pixtrans.com/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Associate</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/pixlogo.png" class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.pixtrans.com/"
-                                        target="_blank">Pix
-                                        Transmission</a>
-                                </center>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.competekaro.com" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Competition <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/competekaro.png"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.competekaro.com"
-                                        target="_blank">CompeteKaro</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.ambriona.com/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Dessert <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/ambriona.png" class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.ambriona.com/"
-                                        target="_blank">Ambriona</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.codingninjas.in/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Coding <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/coding_ninjas.svg"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.codingninjas.in/"
-                                        target="_blank">Coding Ninjas</a>
-                                </center>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m4 l4 ">
-                            <a href="http://simpliforge.com/" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">3D Printing <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/Simpliforge Logo.png"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="http://simpliforge.com/"
-                                        target="_blank">Simpliforge</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.monsterenergy.com" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Energy <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/monster_logo.png" width="50px" height="150px"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.monsterenergy.com/"
-                                        target="_blank">Monster</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="http://noescape.in" target="_blank">
-                                <center>
-                                    <h4 class="center light-heading">Fun <br> Partner</h4>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/noescape_burned.png"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="#" target="_blank">No Escape</a>
-                                </center>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <h4 class="center light-heading">Knowledge Partners</h4>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.tcs.com/" target="_blank">
-                                <center>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/tcs.png" class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.tcs.com/"
-                                        target="_blank">TCS</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://difference-engine.ai" target="_blank">
-                                <center>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/difference-engine-logo-crop.png"
-                                            class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://difference-engine.ai/"
-                                        target="_blank">Difference Engine</a>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 l4 ">
-                            <a href="https://www.neebal.com/" target="_blank">
-                                <center>
-                                    <div class="sponsors-logo-div valign-wrapper">
-                                        <img src="./assets/sponsors/neebal.png" class="responsive-img sponsors-img">
-                                    </div>
-                                    <br>
-                                    <a class="light-heading flow-text" href="https://www.neebal.com/"
-                                        target="_blank">Neebal</a>
-                                </center>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 
-    <!-- Prizes -->
-    <div id="prizes-section" class="container-fluid section grey lighten-5 scrollspy ">
 
-        <div class="container row center">
+        <!-- Prizes -->
+        <div id="prizes-section" class="container-fluid section grey darken-4 scrollspy ">
 
-            <h2 class="center dark-heading">Prizes</h2>
-            <br>
+            <div class="container row center">
 
-            <div class="col s12 m6 l6">
-                <div class="trophy-container">
-                    <div class="trophy"></div>
-                    <div class="trophy-badge"></div>
-                </div>
-
-                <h4 class='center dark-heading'>Prizes upto ₹30,000 for Top 3 teams</h4>
-
-            </div>
-
-            <div class="col s12 m6 l6">
-                <div class="trophy-container">
-                    <div class="trophy"></div>
-                </div>
-
-                <h4 class='center dark-heading'>Special Prize for Female Hackers</h4>
-
-            </div>
-
-            <h4 class='center light-heading prizes-sub-heading col s12 m12 l12'>Goodies and Honourable Mentions for the
-                rest
-                of the hackers :)</h4>
-        </div>
-
-    </div>
-
-
-    <!-- Rules -->
-    <div id="rules-section" class="container-fluid section grey darken-4 scrollspy valign-wrapper">
-        <div class="side-gfx"></div>
-        <div class="container">
-            <h2 class="center light-heading">Rules and regulations!</h2>
-            <p class="light-heading center flow-text">
-                Teams can be anywhere from two to four members. To ensure a level field for all contestants, all code,
-                design and assets must be created during the duration of the Hackathon. You are, however, free to make
-                plans, create
-                wireframes, and brainstorm prior to the event. You are allowed to use 3rd party services, APIs, open
-                source projects, libraries,
-                and
-                frameworks. <br>
-                There will be no
-                alcohol, smoking allowed
-                at the event. Behave professionally. <br> Remember that harassment and racist, sexist, or exclusionary
-                jokes are
-                not appropriate
-                for this event*. Attendees violating these rules may be asked to leave the Hackathon at the sole
-                discretion
-                of the Hackathon
-                organizers. Thank you for helping make this a welcoming, friendly event for all.
-            </p>
-            <p class="light-heading flow-text center">View the complete Rules here</p>
-            <br>
-            <!--Modal Trigger-->
-            <div class="row center">
-                <a href="#modal" class="btn waves-effect waves-teal grey lighten-5 grey-text text-darken-4">Rules</a>
-            </div>
-
-            <div class="">
-
-
-                <!-- Modal Structure -->
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <h4 class="dark-heading center">Rules</h4>
-                        <p class="time-font content-font-size">*Harassment includes but is not limited to offensive
-                            verbal
-                            or written comments related to gender, age, sexual orientation,
-                            disability, physical appearance, body size, race, religion, deliberate intimidation,
-                            stalking,
-                            following, harassing
-                            photography or recording, sustained disruption of talks or other events, inappropriate
-                            physical
-                            contact.
-                            <br><br> If what you’re doing is making someone feel uncomfortable, that counts as
-                            harassment and is
-                            enough reason to stop
-                            doing it. Be careful and mindful of the words that you choose.
-                            <br><br> Remember that exclusionary comments and hacks can be offensive to those around you.
-                            Participants asked to stop any
-                            harassing behavior are expected to comply immediately.
-                            <br><br> Sponsors, judges, mentors, volunteers, organizers, and anyone else at the event are
-                            also
-                            expected to follow the same.
-                            <br><br> In particular, attendees should not use sexualised images, activities, or other
-                            material
-                            both in their hacks and
-                            during the event. If a participant engages in harassing behavior, organizers may take any
-                            action
-                            they deem appropriate,
-                            including warning the offender or expulsion from the event. If you are being harassed,
-                            notice
-                            that someone else is
-                            being harassed, or have any other concerns, please report about it to the volunteers or the
-                            staffs.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!"
-                            class="time-font modal-action modal-close waves-effect waves-teal btn-flat">Agree</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Venue -->
-    <div id="venue-section" class="container-fluid section grey lighten-5 scrollspy ">
-        <div class="container">
-            <h2 class="center dark-heading">Venue</h2>
-            <br>
-            <br>
-
-            <div class="row center hide-on-med-and-up">
-
-                <div class="col s12">
-
-                    <iframe width="100%" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCgopPKhSyKKAhIq4hoBkMU0uHQ5UehyMQ&q=M.H.+Saboo+Siddik+College+of+Engineering,+8,+M.h.+Saboo+Siddiq+Polytechnic+Road,+Nagpada,+Mazgaon,+Mumbai,+Maharashtra+400008"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-
-                <div class="col s12 m6 l6">
-                    <h3 class="dark-heading">M.H. Saboo Siddik College of Engineering</h3>
-                    <p class="dark-heading flow-text">8, Saboo Siddik Polytechnic Road, New Nagpada, Byculla, Mumbai,
-                        Maharashtra 400008, India</p>
-                </div>
-
-            </div>
-
-            <div class="row center valign-wrapper hide-on-small-only">
-
-                <div class="col s12 m6 l6">
-
-                    <iframe width="100%" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCgopPKhSyKKAhIq4hoBkMU0uHQ5UehyMQ&q=M.H.+Saboo+Siddik+College+of+Engineering,+8,+M.h.+Saboo+Siddiq+Polytechnic+Road,+Nagpada,+Mazgaon,+Mumbai,+Maharashtra+400008"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-
-                <div class="col s12 m6 l6">
-                    <h3 class="dark-heading">M.H. Saboo Siddik College of Engineering</h3>
-                    <p class="dark-heading flow-text">8, Saboo Siddik Polytechnic Road, New Nagpada, Byculla, Mumbai,
-                        Maharashtra 400008, India</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Guidelines -->
-    <div id="guidelines-section" class="container-fluid section grey darken-4 scrollspy valign-wrapper">
-        <div class="container flow-text light-heading">
-            <h2 class="center">General Guidelines</h2>
-            We are hopeful that you all will be very excited about the ERR_404 2.0 Hackathon. To conduct this event
-            smoothly
-            &
-            in a successful
-            manner. We would like you to follow the below guidelines:
-            <li>Please be present on time for the onsite registration.</li>
-            <li>Bring along valid college ID cards. Without it, admission won't be allowed.</li>
-            <li>Participants are expected to follow the dress code mentioned in the undertaking</li>
-            <li>The schedule is tentative. It may change a bit,so participants are expected to abide as per the changed
-                schedule.
-            </li>
-            <li>Nobody will be allowed to leave the campus between 9:00PM and 6:00AM.</li>
-            <li>Vehicles will not be allowed to park in the campus.</li>
-            <li>It is necessary to get a signed copy of the undertaking. You can find it below.</li>
-            </p>
-            <h4>The problem statements will be released one day before the event.</h4>
-            <br>
-            <div class="row center time-font">
-                <a class="btn waves-effect waves-teal white grey-text text-darken-4" href="err_404_undertaking.pdf"
-                    download>ERR_404 2.0 Hackathon Undertaking</a>
-            </div>
-
-        </div>
-
-        <div class="side-gfx side-gfx-left"></div>
-    </div>
-
-    <!-- Registration -->
-    <div id="registration-section" class="container-fluid section grey lighten-5 scrollspy">
-        <div class="container-fluid row">
-            <h2 class="center dark-heading">Interested in coming over?</h2>
-            <!-- <h5 class="center dark-heading">Registrations are now closed</h5> -->
-            <form class="col l6 m6 s12 offset-l3 offset-m3" id="registration-form">
-                <div class="row">
-                    <div class="input-field col l12 m12 s12">
-                        <i class="material-icons prefix">group</i>
-                        <input disabled id="team_name" type="text" class="validate">
-                        <label for="team_name">Team Name</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field col l12 m12 s12">
-                        <i class="material-icons prefix">phone</i>
-                        <input disabled id="contact" type="tel" pattern="^\d{10}$" class="validate">
-                        <label for="contact" data-error="Please enter a correct phone number">Team Leader
-                            Contact</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field col l12 m12 s12">
-                        <i class="material-icons prefix">email</i>
-                        <input disabled id="lead_email" type="email" class="validate">
-                        <label for="lead_email" data-error="Please enter a valid email address">Team Leader Email
-                            ID</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input disabled id="lead_name" type="text" class="validate">
-                        <label for="lead_name">Team Leader Name</label>
-                    </div>
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">device_hub</i>
-                        <input disabled id="lead_github" type="text">
-                        <label for="lead_github" data-error="Please enter a valid email address">Team Leader Github
-                            Id</label>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="member_1_name" type="text" class="validate">
-                    <label for="member_1_name">First Member Name</label>
-                </div>
-            </div> -->
-                <div class="row">
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input disabled id="member_1_name" type="text" class="validate">
-                        <label for="member_1_name">First Member Name</label>
-                    </div>
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">device_hub</i>
-                        <input disabled id="member_1_github" type="text">
-                        <label for="member_1_github" data-error="Please enter a valid email address">First Member Github
-                            Id</label>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="member_2_name" type="text" class="validate">
-                    <label for="member_2_name">Second Member Name</label>
-                </div>
-            </div> -->
-                <div class="row">
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input disabled id="member_2_name" type="text">
-                        <label for="member_2_name">Second Member Name</label>
-                    </div>
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">device_hub</i>
-                        <input disabled id="member_2_github" type="text">
-                        <label for="member_2_github" data-error="Please enter a valid email address">Second Member
-                            Github Id</label>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="member_3_name" type="text" class="validate">
-                    <label for="member_3_name">Third Member Name</label>
-                </div>
-            </div> -->
-                <div class="row">
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input disabled id="member_3_name" type="text">
-                        <label for="member_3_name">Third Member Name</label>
-                    </div>
-                    <div class="input-field col l6 m6 s12">
-                        <i class="material-icons prefix">device_hub</i>
-                        <input disabled id="member_3_github" type="text">
-                        <label for="member_3_github" data-error="Please enter a valid email address">Third Member Github
-                            Id</label>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">format_list_numbered</i>
-                    <select class="" id="count">
-                        <option value="0">Choose your option</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <label>Team Members Count (including Team Lead)</label>
-                </div>
-            </div> -->
-
-                <!-- <div class="row">
-                <div class="input-field col l12 m12 s12">
-                    <i class="material-icons prefix">person_outline</i>
-                    <select class="" id="jain-count">
-                        <option value="0">For special food arrangements</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <label>Number of Jain team members (if any)</label>
-                </div>
-            </div> -->
-
-                <div class="row no-margin-bottom">
-                    <div class="input-field col l12 m12 s12">
-                        <i class="material-icons prefix">school</i>
-                        <input disabled id="college" type="text" class="validate autocomplete">
-                        <label for="college">College</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col l12 m12 s12">
-                        <input disabled type="checkbox" class="filled-in" id="terms-box" />
-                        <label for="terms-box" class="terms-and-conditions">I Accept the
-                            <a href="#rules-section">Rules</a> & have read the
-                            <a href="#guidelines-section">Guidelines</a>
-                        </label>
-                    </div>
-                </div>
-                <div class="row center margin">
-                    <div id="submit" class="btn waves-effect waves-teal grey darken-4" onclick="regClosed()">SUBMIT
-                    </div>
-                </div>
-
-            </form>
-        </div>
-    </div>
-
-
-    <!-- Schedule -->
-    <div id="schedule-section" class="container-fluid section grey darken-4 scrollspy valign-wrapper">
-        <div class="side-gfx"></div>
-        <div class="container">
-            <h2 class="center light-heading">Schedule</h2>
-            <h5 class="light-heading">
-                Please bear in mind that it’s a hackathon schedule and things never go to plan, so please take the end
-                time
-
-                with a pinch
-                of salt and allow for a bit of extra time for arrangements during the hackathon ¯\_(ツ)_/⁻</h5>
-            <br>
-            <div class="row center">
-                <a href="timeline.html" class="btn waves-effect waves-teal grey lighten-5 grey-text text-darken-4">Check
-                    out
-                    the Schedule here</a>
-            </div>
-
-
-        </div>
-    </div>
-
-    
-
-    <!--FAQ-->
-    <div class="row grey lighten-5">
-        <div class="col m1"></div>
-        <div id="faq-section" class="container-fluid section col m10 s12 scrollspy">
-            <div class="container row">
-                <h2 class="center dark-heading">FAQ's</h2>
+                <h2 class="center light-heading">Prizes</h2>
                 <br>
-                <div class="col l1 hide-on-med-and-down"></div>
 
-                <ul class="collapsible col l10 s12" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> Who can participate?
+                <div class="col s12 m6 l6">
+                    <div class="trophy-container">
+                        <div class="trophy"></div>
+                        <div class="trophy-badge"></div>
+                    </div>
+
+                    <h4 class="center light-para">Prizes upto ₹50,000 for Top 3 teams</h4>
+
+                </div>
+
+                <div class="col s12 m6 l6">
+                    <div class="trophy-container">
+                        <div class="trophy"></div>
+                    </div>
+
+                    <h4 class='center light-para'>Special Prize for Female Hackers</h4>
+
+                </div>
+
+                <h4 class='center light-heading prizes-sub-heading col s12 m12 l12'>Goodies and Honourable Mentions for
+                    the
+                    rest
+                    of the hackers :)</h4>
+            </div>
+
+        </div>
+
+
+        <!-- Rules -->
+        <div id="rules-section" class="container-fluid section grey lighten-5 scrollspy valign-wrapper">
+            <div class="side-gfx"></div>
+            <div class="container">
+                <h2 class="center dark-heading">Rules and regulations!</h2>
+                <p class="dark-heading center flow-text">
+                    Teams can be anywhere from two to four members. To ensure a level field for all contestants, all
+                    code,
+                    design and assets must be created during the duration of the Hackathon. You are, however, free to
+                    make
+                    plans, create
+                    wireframes, and brainstorm prior to the event. You are allowed to use 3rd party services, APIs, open
+                    source projects, libraries,
+                    and
+                    frameworks. <br>
+                    There will be no
+                    alcohol, smoking allowed
+                    at the event. Behave professionally. <br> Remember that harassment and racist, sexist, or
+                    exclusionary
+                    jokes are
+                    not appropriate
+                    for this event*. Attendees violating these rules may be asked to leave the Hackathon at the sole
+                    discretion
+                    of the Hackathon
+                    organizers. Thank you for helping make this a welcoming, friendly event for all.
+                </p>
+                <p class="light-heading flow-text center">View the complete Rules here</p>
+                <br>
+                <!--Modal Trigger-->
+                <div class="row center">
+                    <a href="#modal"
+                        class="btn waves-effect waves-teal  grey darken-4 light-heading glow-dark">Rules</a>
+                </div>
+
+                <div class="">
+
+
+                    <!-- Modal Structure -->
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <h4 class="dark-heading center">Rules</h4>
+                            <p class="time-font content-font-size">*Harassment includes but is not limited to offensive
+                                verbal
+                                or written comments related to gender, age, sexual orientation,
+                                disability, physical appearance, body size, race, religion, deliberate intimidation,
+                                stalking,
+                                following, harassing
+                                photography or recording, sustained disruption of talks or other events, inappropriate
+                                physical
+                                contact.
+                                <br><br> If what you’re doing is making someone feel uncomfortable, that counts as
+                                harassment and is
+                                enough reason to stop
+                                doing it. Be careful and mindful of the words that you choose.
+                                <br><br> Remember that exclusionary comments and hacks can be offensive to those around
+                                you.
+                                Participants asked to stop any
+                                harassing behavior are expected to comply immediately.
+                                <br><br> Sponsors, judges, mentors, volunteers, organizers, and anyone else at the event
+                                are
+                                also
+                                expected to follow the same.
+                                <br><br> In particular, attendees should not use sexualised images, activities, or other
+                                material
+                                both in their hacks and
+                                during the event. If a participant engages in harassing behavior, organizers may take
+                                any
+                                action
+                                they deem appropriate,
+                                including warning the offender or expulsion from the event. If you are being harassed,
+                                notice
+                                that someone else is
+                                being harassed, or have any other concerns, please report about it to the volunteers or
+                                the
+                                staffs.
+                            </p>
                         </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">Anyone with a knack of programming and solving problems can
-                                participate.</span>
+                        <div class="modal-footer">
+                            <a href="#!"
+                                class="time-font modal-action modal-close waves-effect waves-teal btn-flat grey darken-4 light-heading glow-dark">Agree</a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> How much does it cost?
-                        </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">Thanks to our college, attendance is completely free. We will also
-                                provide you with WiFi, dinner and a workspace.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> What should I bring?
-                        </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">Bring your laptop, charger and other gadgets suitable to your
-                                project and a will to code. Please bring a valid ID
-                                for admission.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> Where is it?
-                        </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">M.H.Saboo Siddik College of Engineering, Byculla is happy to provide
-                                space in their campus to organize the Hackathon.
-                                You can find the directions in the Venue section.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> Where will I sleep?
-                        </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">We have sleeping area with matresses and pillows. You can bring
-                                along sleeping bags & other stuff.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header flow-text">
-                            <span class="cross-box">
-                                <span class="rotating-span"></span>
-                                <span class="horizontal-span"></span>
-                            </span> I don't have a team :(
-                        </div>
-                        <div class="collapsible-body">
-                            <span class="flow-text">Don't worry! Part of the fun of a hackathon is meeting new people.
-                                We will have time at the beginning of the event
-                                to socialize and form teams.</span>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Venue -->
+        <div id="venue-section" class="container-fluid section grey darken-4 scrollspy ">
+            <div class="container">
+                <h2 class="center light-heading">Venue</h2>
+                <br>
+                <br>
+
+                <div class="row center hide-on-med-and-up">
+
+                    <div class="col s12">
+
+                        <iframe width="100%" height="450" frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCgopPKhSyKKAhIq4hoBkMU0uHQ5UehyMQ&q=M.H.+Saboo+Siddik+College+of+Engineering,+8,+M.h.+Saboo+Siddiq+Polytechnic+Road,+Nagpada,+Mazgaon,+Mumbai,+Maharashtra+400008"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h3 class="light-heading">M.H. Saboo Siddik College of Engineering</h3>
+                        <p class="light-para flow-text">8, Saboo Siddik Polytechnic Road, New Nagpada, Byculla,
+                            Mumbai,
+                            Maharashtra 400008, India</p>
+                    </div>
+
+                </div>
+
+                <div class="row center valign-wrapper hide-on-small-only">
+
+                    <div class="col s12 m6 l6">
+
+                        <iframe width="100%" height="450" frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCgopPKhSyKKAhIq4hoBkMU0uHQ5UehyMQ&q=M.H.+Saboo+Siddik+College+of+Engineering,+8,+M.h.+Saboo+Siddiq+Polytechnic+Road,+Nagpada,+Mazgaon,+Mumbai,+Maharashtra+400008"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h3 class="light-heading">M.H. Saboo Siddik College of Engineering</h3>
+                        <p class="light-para flow-text">8, Saboo Siddik Polytechnic Road, New Nagpada, Byculla,
+                            Mumbai,
+                            Maharashtra 400008, India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Guidelines -->
+        <div id="guidelines-section" class="container-fluid section grey lighten-5 scrollspy valign-wrapper">
+            <div class="container flow-text dark-heading">
+                <h2 class="center dark-heading">General Guidelines</h2>
+                We are hopeful that you all will be very excited about the ERR_404 2.0 Hackathon. To conduct this event
+                smoothly
+                &
+                in a successful
+                manner. We would like you to follow the below guidelines:
+                <li>Please be present on time for the onsite registration.</li>
+                <li>Bring along valid college ID cards. Without it, admission won't be allowed.</li>
+                <li>Participants are expected to follow the dress code mentioned in the undertaking</li>
+                <li>The schedule is tentative. It may change a bit,so participants are expected to abide as per the
+                    changed
+                    schedule.
+                </li>
+                <li>Nobody will be allowed to leave the campus between 9:00PM and 6:00AM.</li>
+                <li>Vehicles will not be allowed to park in the campus.</li>
+                <li>It is necessary to get a signed copy of the undertaking. You can find it below.</li>
+                </p>
+                <h4>The problem statements will be released one day before the event.</h4>
+                <br>
+                <div class="row center time-font">
+                    <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-dark" href="err_404_undertaking.pdf"
+                        download>ERR_404 3.0 Hackathon Undertaking</a>
+                </div>
+
+            </div>
+
+            <div class="side-gfx side-gfx-left"></div>
+        </div>
+
+
+        <!-- Schedule -->
+        <div id="schedule-section" class="container-fluid section grey darken-4 scrollspy valign-wrapper">
+            <div class="side-gfx"></div>
+            <div class="container">
+                <h2 class="center light-heading">Schedule</h2>
+                <h5 class="light-para">
+                    Please bear in mind that it’s a hackathon schedule and things never go to plan, so please take the
+                    end
+                    time
+
+                    with a pinch
+                    of salt and allow for a bit of extra time for arrangements during the hackathon ¯\_(ツ)_/⁻</h5>
+                <br>
+                <div class="row center">
+                    <a href="timeline.html"
+                        class="btn waves-effect waves-teal grey darken-4 light-heading glow-light">Check
+                        out
+                        the Schedule here</a>
+                </div>
+
 
             </div>
         </div>
-        <div class="col m1"></div>
-    </div>
 
 
-    <!--Footer Section-->
-    <footer class="page-footer grey darken-4 ">
-        <div class="container ">
-            <div class="row center light-heading">
 
-                <!-- <div class="col l4 s12">
+        <!--FAQ-->
+        <div class="row grey lighten-5">
+            <div class="col m1"></div>
+            <div id="faq-section" class="container-fluid section col m10 s12 scrollspy">
+                <div class="container row">
+                    <h2 class="center dark-heading">FAQ's</h2>
+                    <br>
+                    <div class="col l1 hide-on-med-and-down"></div>
+
+                    <ul class="collapsible col l10 s12" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> Who can participate?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">Anyone with a knack of programming and solving problems can
+                                    participate.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> How much does it cost?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">Thanks to our college, attendance is completely free. We will
+                                    also
+                                    provide you with WiFi, dinner and a workspace.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> What should I bring?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">Bring your laptop, charger and other gadgets suitable to your
+                                    project and a will to code. Please bring a valid ID
+                                    for admission.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> Where is it?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">M.H.Saboo Siddik College of Engineering, Byculla is happy to
+                                    provide
+                                    space in their campus to organize the Hackathon.
+                                    You can find the directions in the Venue section.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> Where will I sleep?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">We have sleeping area with matresses and pillows. You can bring
+                                    along sleeping bags & other stuff.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> I don't have a team :(
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">Don't worry! Part of the fun of a hackathon is meeting new
+                                    people.
+                                    We will have time at the beginning of the event
+                                    to socialize and form teams.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col m1"></div>
+        </div>
+
+        <!-- Registration
+        <div id="registration-section" class="container-fluid section grey darken-4 scrollspy">
+            <div class="container-fluid row">
+                <h2 class="center light-heading">Interested in coming over?</h2>
+            </div>
+            <div class="container-fluid row">
+                <a id="register" class=" center btn waves-effect waves-teal grey darken-4 light-heading" href="#" style="text-align: center; width: 100%;">
+                    Registrations
+                        Openning Shortly!!
+                </a>
+            </div>
+        </div> -->
+
+
+        <!--Footer Section-->
+        <footer class="page-footer grey darken-4 ">
+            <div class="container ">
+                <div class="row">
+                    <h2 class="center light-heading">Interested in coming over?</h2>
+                    <div class="row center">
+                        <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-light" href="#">
+                            Registrations
+                            Openning Shortly!!
+                        </a>
+                    </div>
+                </div>
+                <div class="row center light-para">
+
+                    <!-- <div class="col l4 s12">
 
                     <p><h5>Website developed and maintained by-</h5></p>
                     <p>The Programmers Club</p>
 
                 </div> -->
 
-                <div class="col xl3 l3 m6 s12">
-                    <h5>Staff Co-ordinators</h5>
-                    <ul>
-                        <li>
-                            <b>Mrs. Shabana Tadvi</b> - shabana.tadvi@mhssce.ac.in
-                        </li><br>
-                        <li>
-                            <b>Mr. Mohd Ahmed Shaikh</b> - ahmed@mhssce.ac.in
-                        </li>
-                    </ul>
-                </div>
-                <div class="col  xl3 l3 m6 s12 ">
-                    <h5>Student Co-ordinators</h5>
-                    <ul>
-                        <li class="big">Praneet Bomma</li>
-                        <li class="big">Mohammed Muteeullah</li>
-                        <li class="big">Misbah Sayyed</li>
-                    </ul>
-                </div>
+                    <div class="col xl3 l3 m6 s12">
+                        <h5 class="light-heading">Staff Co-ordinators</h5>
+                        <ul>
+                            <li>
+                                <b>Mrs. Shabana Tadvi</b> - shabana.tadvi@mhssce.ac.in
+                            </li><br>
+                            <li>
+                                <b>Mr. Mohd Ahmed Shaikh</b> - ahmed@mhssce.ac.in
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col  xl3 l3 m6 s12 ">
+                        <h5 class="light-heading">Student Co-ordinators</h5>
+                        <ul>
+                            <li class="big">Praneet Bomma</li>
+                            <li class="big">Mohammed Muteeullah</li>
+                            <li class="big">Misbah Sayyed</li>
+                        </ul>
+                    </div>
 
-                <div class="col xl3 l3 m6 s12">
-                    <h5>Social Links</h5>
-                    <ul>
-                        <li>
-                            <a class="light-heading big" href="https://www.facebook.com/err404mhss"
-                                target="_blank">Facebook</a>
-                        </li>
-                        <li>
-                            <a class="light-heading big" href="https://www.instagram.com/err404hackathon"
-                                target="_blank">Instagram</a>
-                        </li>
-                        <li>
-                            <a class="light-heading big" href="https://www.twitter.com/err404hackathon"
-                                target="_blank">Twitter</a>
-                        </li>
-                        <!-- <li>
+                    <div class="col xl3 l3 m6 s12">
+                        <h5 class="light-heading">Social Links</h5>
+                        <ul>
+                            <li>
+                                <a class="light-para big" href="https://www.facebook.com/err404mhss"
+                                    target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="light-para big" href="https://www.instagram.com/err404hackathon"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="light-para big" href="https://www.twitter.com/err404hackathon"
+                                    target="_blank">Twitter</a>
+                            </li>
+                            <!-- <li>
                         <a class="light-heading big" href="https://github.com/TheProgrammersClub"
                            target="_blank">Github</a>
                     </li> -->
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
 
-                <div class="col xl3 l3 m6 s12">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <li class="light-heading big">programmersclub@mhssce.ac.in</li>
-                        <li class="light-heading big">hackathon_err404@mhssce.ac.in</li>
-                    </ul>
+                    <div class="col xl3 l3 m6 s12">
+                        <h5 class="light-heading">Contact Us</h5>
+                        <ul>
+                            <li class="big">programmersclub@mhssce.ac.in</li>
+                            <li class="big">hackathon_err404@mhssce.ac.in</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright ">
-            <div class="container">
-                <div class="valign-wrapper" style="align-content: center">
-                    <i class="material-icons" style="margin-right: 8px; color: #ff5252">favorite</i> 2019
-                    The Programmers Club
+            <div class="footer-copyright ">
+                <div class="container">
+                    <div class="valign-wrapper" style="align-content: center">
+                        <i class="material-icons" style="margin-right: 8px; color: #ff5252">favorite</i> 2020
+                        The Programmers Club
+                    </div>
+                    <!-- <blockquote style="border-color: #ff5252" class="flow-text">No Copyright :)</blockquote> -->
                 </div>
-                <blockquote style="border-color: #ff5252" class="flow-text">No Copyright :)</blockquote>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     </div>
 
@@ -1158,7 +727,7 @@
     <!-- Firebase JS -->
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
     <!-- Scroll Reval -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- Custom JS -->
     <script src="js/animation_logic.js"></script>
     <script src="js/scripts.js"></script>
