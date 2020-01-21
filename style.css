@@ -16,7 +16,7 @@ a:hover {
   top: 15%;
   color: #212121;
   background: #64ffda;
-  right: 0;
+  left: 0;
   height: 250px;
   width: 90px;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
@@ -51,17 +51,16 @@ a:hover {
 }
 
 .nav--open {
-  height: 80vh;
+  height: 100vh;
   width: 300px;
-  right: 0;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  left: 0;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   opacity: 1;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
           box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   background: #212121;
+  z-index: 8;
 }
 
 .nav--open-icon {
@@ -119,8 +118,8 @@ a:hover {
 .close {
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   opacity: 0;
 }
 
@@ -138,37 +137,18 @@ a:hover {
           box-shadow: 5px 5px 25px rgba(100, 255, 218, 0.5);
 }
 
-.main {
-  margin-top: 20vh;
+.page-footer {
+  margin-bottom: 135px;
 }
 
 .countdown {
   width: 100vw;
-  height: 20vh;
+  height: 135px;
   z-index: 9;
   bottom: 0;
   margin-bottom: 0;
-}
-
-.landing-dino {
-  height: 175px;
-  width: 175px;
-}
-
-@media only screen and (min-width: 480px) {
-  .countdown {
-    height: 10vh;
-  }
-  .nav--open {
-    height: 100vh;
-    z-index: 8;
-  }
-  .landing-dino {
-    height: 75px;
-    width: 75px;
-    position: absolute;
-    left: 100px;
-  }
+  -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
 }
 
 .glow-light:hover {

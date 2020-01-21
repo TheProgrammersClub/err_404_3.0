@@ -8,7 +8,7 @@ $cyan: #64ffda;
 $dark: #212121;
 // $grey: #333333;
 
-$ease-slow: all 0.4s ease-out;
+$ease-slow: all 0.1s ease-out;
 
 a {
   text-decoration: none;
@@ -27,7 +27,7 @@ a {
   top: 15%;
   color: $dark;
   background: $cyan;
-  right: 0;
+  left: 0;
   height: 250px;
   width: 90px;
   box-shadow: 2px 2px 15px rgba($cyan, 0.5);
@@ -59,16 +59,17 @@ a {
 //navigation open
 
 .nav--open {
-  height: 80vh;
+  height: 100vh;
   width: 300px;
-  right: 0;
+  left: 0;
   // top: 20vh;
   // background: rgba(100, 255, 219, 0.397);
   transition: $ease-slow;
   opacity: 1;
   box-shadow: 2px 2px 15px rgba($cyan, 0.5);
-  backdrop-filter: blur(5px);
+  // backdrop-filter: blur(5px);
   background: $dark;
+  z-index: 8;
 }
 
 .nav--open-icon {
@@ -133,39 +134,54 @@ a {
   }
 }
 
-.main {
-  margin-top: 20vh;
+// .main {
+//   margin-top: 20vh;
+// }
+
+// Page Footer
+.page-footer {
+  margin-bottom: 135px;
 }
+
 // Countdown Timer
 .countdown {
   width: 100vw;
-  height: 20vh;
+  height: 135px;
   z-index: 9;
   bottom: 0;
   margin-bottom: 0;
+  box-shadow: 2px 2px 15px rgba($cyan, 0.5);
 }
 
-.landing-dino {
-  height: 175px;
-  width: 175px;
-}
+// @media only screen and (max-device-width:481px) {
+//   .countdown {
+//     height: 10vh;
+//   }
+//   // .nav--open {
+//   //   height: 100vh;
+//   //   z-index: 8;
+//   // }
+//   .page-footer {
+//     margin-bottom: 10vh;
+//   }
 
-@media only screen and (min-width: 480px) {
-  .countdown {
-    height: 10vh;
-  }
-  .nav--open {
-    height: 100vh;
-    z-index: 8;
-  }
+// }
 
-  .landing-dino{
-    height: 75px;
-    width: 75px;
-    position: absolute;
-    left: 100px;
-  }
-}
+// @media only screen and (max-device-width:360px) {
+//   .countdown {
+//     height: 11vh;
+//   }
+//   // .nav--open {
+//   //   height: 100vh;
+//   //   z-index: 8;
+//   // }
+//   .page-footer {
+//     margin-bottom: 11vh;
+//   }
+
+// }
+
+
 
 // Glow on Hover
 .glow-light {
@@ -194,6 +210,7 @@ a {
     cursor: pointer;
   }
 }
+
 
 // Scroll Bar
 
