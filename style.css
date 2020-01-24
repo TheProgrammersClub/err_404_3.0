@@ -18,16 +18,10 @@ a:hover {
   background: #64ffda;
   left: 0;
   height: 250px;
-  width: 90px;
+  width: 80px;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
           box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
   visibility: visible;
-}
-
-.navbar--icon {
-  margin-bottom: 49px;
-  margin-left: 29px;
-  font-size: 1.2em;
 }
 
 .navbar--icon:hover {
@@ -35,8 +29,14 @@ a:hover {
   cursor: pointer;
 }
 
+.nb-icon {
+  margin-bottom: 49px;
+  margin-left: 39px;
+  font-size: 1.2em;
+}
+
 .navbar--title {
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 20px;
 }
 
@@ -54,8 +54,8 @@ a:hover {
   height: 100vh;
   width: 300px;
   left: 0;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   opacity: 1;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
           box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
@@ -118,14 +118,13 @@ a:hover {
 .close {
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   opacity: 0;
 }
 
 #register {
   height: 100%;
-  margin-top: 2em;
   background: #64ffda;
   color: #212121;
 }
@@ -143,7 +142,7 @@ a:hover {
 
 .countdown {
   width: 100vw;
-  height: 135px;
+  height: 110px;
   z-index: 9;
   bottom: 0;
   margin-bottom: 0;
@@ -162,7 +161,8 @@ a:hover {
 }
 
 #landing-section {
-  top: 0 !important;
+  height: 300px;
+  padding-top: 100px !important;
 }
 
 .err404-btn {
