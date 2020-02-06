@@ -149,7 +149,7 @@ a:hover {
   height: 110px;
   z-index: 9;
   bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: -30px;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
           box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
 }
