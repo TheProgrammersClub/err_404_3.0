@@ -160,6 +160,7 @@ ul li a {
 }
 
 .time-font {
+    color: #64ffda;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }
@@ -233,6 +234,7 @@ ul li a.active {
     border: 0px;
     box-shadow: none;
     color: #64FFDA;
+    
 }
 
 #faq-section .collapsible-body {
@@ -252,6 +254,7 @@ ul li a.active {
     height: 2px;
     background: black;
 }
+
 
 .horizontal-span {
     top: -15px !important;

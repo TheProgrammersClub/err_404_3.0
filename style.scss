@@ -10,6 +10,10 @@ $dark: #212121;
 
 $ease-slow: all 0.4s ease-out; 
 
+body{
+  cursor: url(assets/cursors/cursor.cur), auto;
+}
+
 a {
   text-decoration: none;
   color: $dark;
@@ -32,12 +36,13 @@ a {
   width: 80px;
   box-shadow: 2px 2px 15px rgba($cyan, 0.5);
   visibility: visible;
+  
 }
 
 .navbar--icon {
   &:hover {
     color: $dark;
-    cursor: pointer;
+    cursor: url(assets/cursors/pointer.cur), default;
   }
 }
 
@@ -85,7 +90,7 @@ a {
     &:hover {
       color: $dark;
       background: $cyan;
-      cursor: pointer;
+      cursor: url(assets/cursors/pointer.cur), default;
     }
   }
 }
@@ -230,4 +235,15 @@ a {
 
 ::-webkit-scrollbar-track {
   background: $dark;
+}
+
+// Pointer Cursor
+
+.glove a{
+  cursor: url(assets/cursors/pointer.cur), default;
+}
+
+#faq-section .collapsible-header:hover {
+  cursor: url(../assets/cursors/pointer.cur), default;
+  
 }

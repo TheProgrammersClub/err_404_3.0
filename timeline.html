@@ -16,101 +16,125 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
+	<!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
 	<!--Custom Stylesheets-->
-	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/timeline.css">
+	
+	
 </head>
-<body class="background">
-	<!--Navbar Section-->
-	<div class="navbar-fixed">
-		<nav class="grey darken-4 z-depth-0">
-			<div class="nav-wrapper">
-				<a href="index.html" class="brand-logo center">ERR_404 2.0</a>
-			</div>
-		</nav>
-	</div>
+<body class="background glove">
+	
+	<!-- Nav bar section -->
+        <!-- Nav bar section -->
+        <div class="navbar--container navbar--icon sticky" id="nav--sticky">
+            <div class="navbar--title">
+                <h4>err_404 3.0</h4>
+                <img src="assets/favicon.png" alt="" style="width: 20px; height: 20px;">
+            </div>
+            <div class="nb-icon" style="padding-top: 10px;">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav--open close sticky" style="margin-top: -22px;">
+            <div class="nav--open-icon">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+                <a href="index.html">home</a>
+                <a href="hackathons.html">hackathons</a>
+                <a href="sponsors.html">past sponsors</a>
+                <a href="index.html#rules-section">rules</a>
+                <a href="index.html#guidelines-section">guidelines</a>
+                <a href="index.html#faq-section">FAQs</a>
+            </div>
+        </div>
+
 	<!--EVENTS-->
-	<div>
-		<h3 class="center dark-heading">Schedule</h3>
+	<div class="grey darken-4">
+		<h3 class="center light-heading">Schedule</h3>
 		<section class="timeline grey-text text-lighten-5">
 			<ul>
 				<li>
 					<div class="time-font">
-						<time>12:00 PM</time>
-						Registration Begins
+						<time>9:00 AM</time>
+						<p class="light-para">Registration Begins</p>
+					</div>
+				</li>
+				<li>
+					<div class="time-font">
+						<time>10:00 AM</time>
+						<p class="light-para">Opening Ceremony</p>
+					</div>
+				</li>
+				<li>
+					<div class="time-font">
+						<time>11:00 AM</time>
+						<p class="light-para">Hacking Starts</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>1:00 PM</time>
-						Opening Ceremony
+						<p class="light-para">Lunch</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
-						<time>2:00 PM</time>
-						Hacking Starts
+						<time>4:00 PM</time>
+						<p class="light-para">Sponsor's Event</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>5:00 PM</time>
-						Snacks Break
+						<p class="light-para">Snack Break</p>
 					</div>
 				</li>
-				<!-- <li>
-					<div class="time-font">
-						<time>8:00 PM</time>
-						Dinner
-					</div>
-				</li> -->
 				<li>
 					<div class="time-font">
 						<time>8:30 PM</time>
-						Dinner
+						<p class="light-para">Dinner</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
-						<time>2:00 AM</time>
-						Mini Event
-					</div>
-				</li>
-				<li>
-					<div class="time-font">
-						<time>8:00 AM</time>
-						Breakfast
+						<time>1:00 AM</time>
+						<p class="light-para">Sponsor's Event</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>12:00 PM</time>
-						Elimination Round
+						<p class="light-para">Elimination Round</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>2:00 PM</time>
-						Hacking Ends
+						<p class="light-para">Hacking Ends</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>2:30 PM</time>
-						End of Elimination Round
+						<p class="light-para">End of Elimination Round</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>3:00 PM</time>
-						Final Presentation of Shortlisted Teams
+						<p class="light-para">Final Presentation of Shortlisted Teams</p>
 					</div>
 				</li>
 				<li>
 					<div class="time-font">
 						<time>5:00 PM</time>
-						Prize Distribution
+						<p class="light-para">Prize Distribution</p>
 					</div>
 				</li>
 			</ul>
@@ -123,7 +147,8 @@
 	crossorigin="anonymous"></script>
 	<!-- Materialize JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
+	<!-- Navbar Js -->
+	<script src="js/navbar.js"></script>
 	<!--Custom JS-->
 	<script src="js/timeline_script.js"></script>
 </body>

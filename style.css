@@ -1,3 +1,7 @@
+body {
+  cursor: url(assets/cursors/cursor.cur), auto;
+}
+
 a {
   text-decoration: none;
   color: #212121;
@@ -26,7 +30,7 @@ a:hover {
 
 .navbar--icon:hover {
   color: #212121;
-  cursor: pointer;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nb-icon {
@@ -76,7 +80,7 @@ a:hover {
 .nav--open-icon i:hover {
   color: #212121;
   background: #64ffda;
-  cursor: pointer;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nav--open-title {
@@ -186,5 +190,13 @@ a:hover {
 
 ::-webkit-scrollbar-track {
   background: #212121;
+}
+
+.glove a {
+  cursor: url(assets/cursors/pointer.cur), default;
+}
+
+#faq-section .collapsible-header:hover {
+  cursor: url(../assets/cursors/pointer.cur), default;
 }
 /*# sourceMappingURL=style.css.map */
