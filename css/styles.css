@@ -33,7 +33,7 @@ body {
 
 .landing-title img {
     /* height: 100%; */
-    width: 80vw; 
+    width: 768px; 
     position: relative;
     left: 40%;
     transform: translateX(-50%);
