@@ -42,7 +42,7 @@
   height: 30px;
   border-radius: 50%;
   background: inherit;
-  box-shadow: 2px 2px 10px #64ffda;
+  box-shadow: 2px 2px 15px #64ffdbce;
 }
 
 .timeline ul li div {
@@ -51,7 +51,7 @@
   width: 400px;
   padding: 15px;
   background: #212121;
-  box-shadow: 2px 2px 10px #64ffda;
+  box-shadow: 2px 2px 15px #64ffdbce;
 }
 
 .timeline ul li div::before {
