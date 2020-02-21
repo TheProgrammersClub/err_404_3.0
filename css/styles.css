@@ -35,8 +35,8 @@ body {
     /* height: 100%; */
     width: 768px; 
     position: relative;
-    left: 40%;
-    transform: translateX(-50%);
+    left: 3%;
+    /* transform: translateX(-40%);      */
 }
 
 .landing-sub {
@@ -376,6 +376,7 @@ ul li a.active {
 
 .big {
     font-size: 16px;
+    text-decoration: none;
 }
 
 .small {

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- useful meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=.5,minimum-scale=.5,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="An event hosted by MHSSCE to promote the programming culture">
+    <meta name="keywords" content="hackathon">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#212121">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+    <!-- title -->
+    <title>ERR_404 3.0 | Hackathon</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
+    <!--Slick for slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="register.css">
+
+</head>
+
+<body onload="loadProgress()">
+
+
+    <!-- Loader | starts-->
+    <div id="loader" class="valign-wrapper grey darken-4">
+        <div class="row">
+            <div class="col s12">
+                <center>
+                    <div class="anim"></div>
+                    <div class="progress" style="background: #5a5a5a">
+                        <div class="indeterminate" style="color: #64ffda"></div>
+                    </div>
+                    <p class="light-heading flow-text">Loading...</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Loader | ends -->
+
+    <!-- main body | starts -->
+    <div id="main" class="grey darken-4 glove">
+        <div class="row center" style="padding: 20px;">
+            <img class="title-img" src="./assets/hack-3.0-png.png" alt="">
+            <h3 class="light-heading">The ERR_404 3.0 Hackathon is almost here.</h3>
+            <h5 class="light-para">Want to come?</h5>
+            <p class="light-para">Register before 24<sup>th</sup> Feb, 2020.</p>
+        </div>
+
+
+        <div class="row form-div">
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeADeGHcsclYil1bEYevnM4XdLCx-ptkQRLkcecxU8GCs3oew/formResponse"
+                method=”POST”>
+                <!-- <input type="email" name="emailAddress" placeholder="Email Address" required=""> -->
+                <div class="row center">
+                    <h4 class="light-para">Team Details</h4>
+                </div>
+                <label class="light-heading" for="entry.2092238618">Team Name<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.318413016" placeholder="Team Name" required="">
+                <label class="light-heading" for="entry.1297296689">College Name<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.1297296689" placeholder="College Name" required="">
+
+                <!-- Team Leader -->
+                <div class="row center">
+                    <h4 class="light-para">Team Leader's Details</h4>
+                </div>
+                <label class="light-heading" for="entry.1556369182">Team Leader Name<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.1556369182" placeholder="Name" required="">
+
+                <label class="light-heading" for="entry.566051186">Team Leader Contact No (WhatsApp)<sup>*</sup></label>
+                <input class="light-para" type="number" name="entry.566051186" placeholder="Contact No" required="">
+
+                <label class="light-heading" for="entry.479301265">Team Leader Email Id<sup>*</sup></label>
+                <input class="light-para" type="email" name="entry.479301265" placeholder="Team Leader Email Id"
+                    required="">
+
+                <label class="light-heading" for="entry.1267451146">Team Leader Resume Link<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.1267451146" placeholder="Resume Link" required="">
+
+                <label class="light-heading" for="entry.291574604">Team Leader Github Link<sup>*</sup></label>
+                <input class="light-para" type="url" name="entry.291574604" placeholder="Team Leader Github Link"
+                    required="">
+
+                <!-- Member 2 -->
+                <div class="row center">
+                    <h4 class="light-para">Team Member 2's Details</h4>
+                </div>
+
+                <label class="light-heading" for="entry.1465150913">Team Member 2 Name<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.1465150913" placeholder="Name" required="">
+
+                <label class="light-heading" for="entry.890399114">Team Member 2 Contact No<sup>*</sup></label>
+                <input class="light-para" type="number" name="entry.890399114" placeholder="Contact No" required="">
+
+                <label class="light-heading" for="entry.1513740962">Team Member 2 Email Id<sup>*</sup></label>
+                <input class="light-para" type="email" name="entry.1513740962" placeholder="Team Leader Email Id"
+                    required="">
+
+                <label class="light-heading" for="entry.1612565551">Team Member 2 Resume Link<sup>*</sup></label>
+                <input class="light-para" type="text" name="entry.1612565551" placeholder="Resume Link" required="">
+
+                <label class="light-heading" for="entry.583434847">Team Member 2 Github Link<sup>*</sup></label>
+                <input class="light-para" type="url" name="entry.583434847" placeholder="Github Link" required="">
+
+                <!-- Member 3 -->
+                <div class="row center">
+                    <h4 class="light-para">Team Member 3's Details</h4>
+                </div>
+                <label class="light-heading" for="entry.1353145216">Team Member 3 Name</label>
+                <input class="light-para" type="text" name="entry.1353145216" placeholder="Name">
+
+                <label class="light-heading" for="entry.1278480502">Team Member 3 Contact No</label>
+                <input class="light-para" type="number" name="entry.1278480502" placeholder="Contact No">
+
+                <label class="light-heading" for="entry.1423227397">Team Member 3 Email Id</label>
+                <input class="light-para" type="email" name="entry.1423227397" placeholder="Team Leader Email Id">
+
+                <label class="light-heading" for="entry.1005990340">Team Member 3 Resume Link</label>
+                <input class="light-para" type="text" name="entry.1005990340" placeholder="Resume Link">
+
+                <label class="light-heading" for="entry.1640799607">Team Member 3 Github Link</label>
+                <input class="light-para" type="url" name="entry.1640799607" placeholder="Github Link">
+
+                <!-- Member 4 -->
+                <div class="row center">
+                    <h4 class="light-para">Team Member 4's Details</h4>
+                </div>
+                <label class="light-heading" for="entry.2045375167">Team Member 4 Name</label>
+                <input class="light-para" type="text" name="entry.2045375167" placeholder="Name">
+
+                <label class="light-heading" for="entry.491342876">Team Member 4 Contact No</label>
+                <input class="light-para" type="number" name="entry.491342876" placeholder="Contact No">
+
+                <label class="light-heading" for="entry.1996969265">Team Member 4 Email Id</label>
+                <input class="light-para" type="email" name="entry.1996969265" placeholder="Team Leader Email Id">
+
+                <label class="light-heading" for="entry.1792411293">Team Member 4 Resume Link</label>
+                <input class="light-para" type="text" name="entry.1792411293" placeholder="Resume Link">
+
+                <label class="light-heading" for="entry.1398282600">Team Member 4 Github Link</label>
+                <input class="light-para" type="url" name="entry.1398282600" placeholder="Github Link">
+
+                <!-- Problem Statement Preference -->
+
+                <!--<h5 class="light-heading">Last One :)</h5>-->
+                <!--<div class="row center">-->
+                <!--    <h4 class="light-para">Problem Statement Preference</h4>-->
+                <!--</div>-->
+
+                <!-- Machine Learning -->
+                <!--<label class="light-heading" for="entry.1172748237">Machine Learning</label>-->
+                <!--<div class="center light-para radio-btn">-->
+                <!--    <input type="radio" name="entry.1172748237" value="5" id="ml5" required="required">-->
+                <!--    <label for="ml5">5</label>-->
+                <!--    <input type="radio" name="entry.1172748237" value="4" id="ml4">-->
+                <!--    <label for="ml4">4</label>-->
+                <!--    <input type="radio" name="entry.1172748237" value="3" id="ml3">-->
+                <!--    <label for="ml3">3</label>-->
+                <!--    <input type="radio" name="entry.1172748237" value="2" id="ml2">-->
+                <!--    <label for="ml2">2</label>-->
+                <!--    <input type="radio" name="entry.1172748237" value="1" id="ml1">-->
+                <!--    <label for="ml1">1</label>-->
+                <!--</div>-->
+
+                <!-- Web Development -->
+                <!--<label class="light-heading" for="entry.1010988524">Web Development</label>-->
+                <!--<div class="center light-para radio-btn">-->
+                <!--    <input type="radio" name="entry.1010988524" value="5" id="wd5" required="required">-->
+                <!--    <label for="wd5">5</label>-->
+                <!--    <input type="radio" name="entry.1010988524" value="4" id="wd4">-->
+                <!--    <label for="wd4">4</label>-->
+                <!--    <input type="radio" name="entry.1010988524" value="3" id="wd3">-->
+                <!--    <label for="wd3">3</label>-->
+                <!--    <input type="radio" name="entry.1010988524" value="2" id="wd2">-->
+                <!--    <label for="wd2">2</label>-->
+                <!--    <input type="radio" name="entry.1010988524" value="1" id="wd1">-->
+                <!--    <label for="wd1">1</label>-->
+                <!--</div>-->
+                
+                <!-- App Development -->
+                <!--<label class="light-heading" for="entry.1114505404">App Development</label>-->
+                <!--<div class="center light-para radio-btn">-->
+                <!--    <input type="radio" name="entry.1114505404" value="5" id="ad5" required="required">-->
+                <!--    <label for="ad5">5</label>-->
+                <!--    <input type="radio" name="entry.1114505404" value="4" id="ad4">-->
+                <!--    <label for="ad4">4</label>-->
+                <!--    <input type="radio" name="entry.1114505404" value="3" id="ad3">-->
+                <!--    <label for="ad3">3</label>-->
+                <!--    <input type="radio" name="entry.1114505404" value="2" id="ad2">-->
+                <!--    <label for="ad2">2</label>-->
+                <!--    <input type="radio" name="entry.1114505404" value="1" id="ad1">-->
+                <!--    <label for="ad1">1</label>-->
+                <!--</div>-->
+
+                <!-- Big Data -->
+                <!--<label class="light-heading" for="entry.1516657027">Big Data</label>-->
+                <!--<div class="center light-para radio-btn">-->
+                <!--    <input type="radio" name="entry.1516657027" value="5" id="bd5" required="required">-->
+                <!--    <label for="bd5">5</label>-->
+                <!--    <input type="radio" name="entry.1516657027" value="4" id="bd4">-->
+                <!--    <label for="bd4">4</label>-->
+                <!--    <input type="radio" name="entry.1516657027" value="3" id="bd3">-->
+                <!--    <label for="bd3">3</label>-->
+                <!--    <input type="radio" name="entry.1516657027" value="2" id="bd2">-->
+                <!--    <label for="bd2">2</label>-->
+                <!--    <input type="radio" name="entry.1516657027" value="1" id="bd1">-->
+                <!--    <label for="bd1">1</label>-->
+                <!--</div>-->
+
+                <!-- Network and Security -->
+                <!--<label class="light-heading" for="entry.1024941383">Network and Security</label>-->
+                <!--<div class="center light-para radio-btn">-->
+                <!--    <input type="radio" name="entry.1024941383" value="5" id="ns5" required="required">-->
+                <!--    <label for="ns5">5</label>-->
+                <!--    <input type="radio" name="entry.1024941383" value="4" id="ns4">-->
+                <!--    <label for="ns4">4</label>-->
+                <!--    <input type="radio" name="entry.1024941383" value="3" id="ns3">-->
+                <!--    <label for="ns3">3</label>-->
+                <!--    <input type="radio" name="entry.1024941383" value="2" id="ns2">-->
+                <!--    <label for="ns2">2</label>-->
+                <!--    <input type="radio" name="entry.1024941383" value="1" id="ns1">-->
+                <!--    <label for="ns1">1</label>-->
+                <!--</div>-->
+
+                 <!-- Cloud Computing -->
+                <!-- <label class="light-heading" for="entry.1424409587">Cloud Computing</label>-->
+                <!-- <div class="center light-para radio-btn">-->
+                <!--     <input type="radio" name="entry.1424409587" value="5" id="cc5" required="required">-->
+                <!--     <label for="cc5">5</label>-->
+                <!--     <input type="radio" name="entry.1424409587" value="4" id="cc4">-->
+                <!--     <label for="cc4">4</label>-->
+                <!--     <input type="radio" name="entry.1424409587" value="3" id="cc3">-->
+                <!--     <label for="cc3">3</label>-->
+                <!--     <input type="radio" name="entry.1424409587" value="2" id="cc2">-->
+                <!--     <label for="cc2">2</label>-->
+                <!--     <input type="radio" name="entry.1424409587" value="1" id="cc1">-->
+                <!--     <label for="cc1">1</label>-->
+                <!-- </div>-->
+        </div>
+    </div>
+
+
+    <div class="row center glove">
+        <button class="btn waves-effect waves-teal glow-light register-btn" type="submit">
+            Submit
+        </button>
+    </div>
+    
+    <div class="row center glove light-heading">
+        <br>
+        <h5>Having Trouble Submitting?</h5>
+        <h6>
+            <a class="light-para" href="https://forms.gle/91RRSdtXvLSCh5cU8">Click Here</a>
+        </h6>
+    </div>
+
+    <!-- <button type="submit">Submit</button> -->
+    <!-- Preferences -->
+    <!-- <input type="" -->
+    </form>
+    </div>
+    </div>
+
+    <!-- main body | ends -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- Firebase JS
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script> -->
+    <!-- Scroll Reval -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/animation_logic.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/navbar.js"></script> -->
+    <!--SLICK-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

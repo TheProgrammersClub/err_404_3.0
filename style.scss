@@ -194,7 +194,9 @@ a {
 
 // Glow on Hover
 .glow-light {
+  // color: $cyan;
   &:hover {
+    // color: white;
     box-shadow: 2px 2px 15px rgba($cyan, 0.5);
   }
 }
@@ -244,6 +246,10 @@ a {
 }
 
 #faq-section .collapsible-header:hover {
-  cursor: url(assets/cursors/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default !important;
   
+}
+
+.jfForm-background-mask {
+  background: #212121 !important;
 }

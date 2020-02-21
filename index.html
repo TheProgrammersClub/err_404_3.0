@@ -35,6 +35,12 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        a[href^=tel] {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body onload="loadProgress()">
@@ -90,13 +96,13 @@
 
             <div class="row center">
                 <div class="col s16 m16 l16">
-                    <div class="landing-title"><img src="./assets/comp1_1 (1).gif">
+                    <div class="landing-title"><img src="./assets/dino3_0_noloop.gif">
                     </div>
                     <br>
                 </div>
-                
+
             </div>
-            
+
 
             <!-- <div class="row">
                 <div class="col m3 l2">
@@ -106,17 +112,17 @@
                 <div class="col m3 l2"></div>
                 <div class="col m3 l2"></div>
             </div> -->
-            
-            
+
+
         </div>
         <div class="row container center">
             <div class="col s12 m12 l4 "></div>
-        <div class="col s12 m12 l4 glove">
-            <a id="register" class="btn waves-effect waves-teal" href="#">
-                <h4>Coming Soon</h4>
-            </a>
-        </div>
-        <div class="col s12 m12 l4 "></div>
+            <div class="col s12 m12 l4 glove">
+                <a id="register" class="btn waves-effect waves-teal" href="./registration.html">
+                    <h5>Registrations Open</h4>
+                </a>
+            </div>
+            <div class="col s12 m12 l4 "></div>
         </div>
 
         <!-- Timer -->
@@ -141,7 +147,7 @@
                     <span class="countdown-amount light-heading" id="sec"></span>
                     <h3 class="countdown-title light-para">Secs</h3>
                 </div>
-                
+
             </div>
 
             <!-- <div class="row center">
@@ -197,41 +203,35 @@
                             exposed to new data. </p>
 
                     </div>
-
-                    <!--Computer Vision-->
-
-                    <div class="col s12 m6 l4 xl4 center">
-
-                        <img class="responsive-img domain_icon" src="assets/computer_vision.png">
-                        <h5 class="dark-heading">Computer Vision</h5>
-                        <p class="content-font-size flow-text">Computer vision is concerned with the automatic
-                            extraction,
-                            analysis and understanding of useful information from a
-                            single image or a sequence of images. It involves the development of a theoretical and
-                            algorithmic
-                            basis to achieve
-                            automatic visual understanding.</p>
-
-                    </div>
-
-                    <!--Block Chain-->
+                    
+                  <!--Web Development-->
 
                     <div class="col s12 m6 l4 xl4 center">
 
-                        <img class="responsive-img domain_icon" src="assets/block_chain_icon.png">
-                        <h5 class="dark-heading">Block Chain</h5>
-
-                        <p class="content-font-size flow-text">It’s the technology that underpins digital currencies and
-                            ensures
-                            that all transactions are properly conducted and
-                            recorded. Blockchain technologies make tracking and managing digital identities both secure
-                            and
-                            efficient resulting
-                            in seamless sign-on and reduced fraud.</p>
-
+                        <img class="responsive-img domain_icon" src="assets/web_icon.png">
+                        <h5 class="dark-heading">Web Development</h5>
+                        <p class="content-font-size flow-text">Web development is the work involved in developing a web
+                            site for the Internet or an intranet. It can range from developing a simple single static
+                            page of plain text to complex web-based internet applications, electronic businesses, and
+                            social network services.</p>
 
                     </div>
 
+                    
+                  	
+                  	<!--Cloud Computing-->
+
+                    <div class="col s12 m6 l4 xl4 center">
+
+                        <img class="responsive-img domain_icon" src="assets/cloud_icon.png">
+                        <h5 class="dark-heading">Cloud Computing</h5>
+                        <p class="content-font-size flow-text">Cloud computing is the on-demand availability of computer
+                            system resources, especially data storage and computing power, without direct active
+                            management by the user. The term is generally used to describe data centers available to
+                            many users over the Internet.</p>
+
+                    </div>
+                    
                     <!--Big Data-->
 
                     <div class="col s12 m6 l4 xl4 center">
@@ -246,9 +246,8 @@
                             help
                             organizations
                             make more-informed business decisions.</p>
-
                     </div>
-
+                    
                     <!--Networking And Security-->
 
                     <div class="col s12 m6 l4 xl4 center">
@@ -266,18 +265,17 @@
 
                     </div>
 
-                    <!--Social Cause-->
+                    <!--App Development-->
 
                     <div class="col s12 m6 l4 xl4 center">
 
-                        <img class="responsive-img domain_icon" src="assets/social_cause_icon.png">
-                        <h5 class="dark-heading">Social Cause</h5>
-                        <p class="content-font-size flow-text">India even after 69 years of independence faces many
-                            socio-economical issues. Many type of problem arises due to natural
-                            & man-made activities. Bring out your creative thinking and build innovative & feasible
-                            solutions
-                            for these problems.</p>
-
+                        <img class="responsive-img domain_icon" src="assets/app_icon.png">
+                        <h5 class="dark-heading">App Development</h5>
+                        <p class="content-font-size flow-text">Mobile app development is the act or process by which a
+                            mobile app is developed for mobile devices, such as personal digital assistants, enterprise
+                            digital assistants or mobile
+                            phones.
+                        </p>
                     </div>
 
                 </div>
@@ -304,7 +302,7 @@
                         <div class="trophy-badge"></div>
                     </div>
 
-                    <h4 class="center light-para">Prizes upto ₹50,000 for Top 3 teams</h4>
+                    <h4 class="center light-para">Prizes upto ₹40,000 for Top 3 teams</h4>
 
                 </div>
 
@@ -364,9 +362,9 @@
 
 
                     <!-- Modal Structure -->
-                    <div id="modal" class="modal">
+                    <div id="modal" class="modal grey darken-4">
                         <div class="modal-content">
-                            <h4 class="dark-heading center">Rules</h4>
+                            <h4 class="light-para center">Rules</h4>
                             <p class="time-font content-font-size">*Harassment includes but is not limited to offensive
                                 verbal
                                 or written comments related to gender, age, sexual orientation,
@@ -403,7 +401,7 @@
                                 staffs.
                             </p>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer grey darken-4">
                             <a href="#!"
                                 class="time-font modal-action modal-close waves-effect waves-teal btn-flat grey darken-4 light-heading glow-dark">Agree</a>
                         </div>
@@ -469,7 +467,7 @@
         <div id="guidelines-section" class="container-fluid section grey lighten-5 scrollspy valign-wrapper">
             <div class="container flow-text dark-heading">
                 <h2 class="center dark-heading">General Guidelines</h2>
-                We are hopeful that you all will be very excited about the ERR_404 2.0 Hackathon. To conduct this event
+                We are hopeful that you all will be very excited about the ERR_404 3.0 Hackathon. To conduct this event
                 smoothly
                 &
                 in a successful
@@ -485,16 +483,16 @@
                 <li>Vehicles will not be allowed to park in the campus.</li>
                 <li>It is necessary to get a signed copy of the undertaking. You can find it below.</li>
                 </p>
-                <h4>The problem statements will be released one day before the event.</h4>
+                <h4>The problem statements will be released two days before the event.</h4>
                 <br>
                 <div class="row center time-font">
-                    <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-dark" href="err_404_undertaking.pdf"
-                        download>ERR_404 3.0 Hackathon Undertaking</a>
+                    <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-dark"
+                        href="err_404_undertaking.pdf" download>ERR_404 3.0 Hackathon Undertaking</a>
                 </div>
 
             </div>
 
-            <div class="side-gfx side-gfx-left"></div>
+            <div class="side-gfx side-gfx-right"></div>
         </div>
 
 
@@ -556,7 +554,7 @@
                             <div class="collapsible-body">
                                 <span class="flow-text">Thanks to our college, attendance is completely free. We will
                                     also
-                                    provide you with WiFi, dinner and a workspace.</span>
+                                    provide you with WiFi, breakfast, lunch, snacks, dinner and a workspace.</span>
                             </div>
                         </li>
                         <li>
@@ -591,11 +589,10 @@
                                 <span class="cross-box">
                                     <span class="rotating-span"></span>
                                     <span class="horizontal-span"></span>
-                                </span> Where will I sleep?
+                                </span>Will Jain Food be provided?
                             </div>
                             <div class="collapsible-body">
-                                <span class="flow-text">We have sleeping area with matresses and pillows. You can bring
-                                    along sleeping bags & other stuff.</span>
+                                <span class="flow-text">Yes, food arrangements will be made for Jain Participants.</span>
                             </div>
                         </li>
                         <li>
@@ -603,20 +600,31 @@
                                 <span class="cross-box">
                                     <span class="rotating-span"></span>
                                     <span class="horizontal-span"></span>
-                                </span> I don't have a team :(
+                                </span>Is it compulsory that all members belong to same college?
                             </div>
                             <div class="collapsible-body">
-                                <span class="flow-text">Don't worry! Part of the fun of a hackathon is meeting new
-                                    people.
-                                    We will have time at the beginning of the event
-                                    to socialize and form teams.</span>
+                                <span class="flow-text">No it is not, you can form a team of students from different colleges. While registering you can either put the Team Leader's 
+                                    College or mutually decide.</span>
                             </div>
                         </li>
+                        <!-- <li>
+                            <div class="collapsible-header flow-text">
+                                <span class="cross-box">
+                                    <span class="rotating-span"></span>
+                                    <span class="horizontal-span"></span>
+                                </span> Where will I sleep?
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">We have sleeping area with matresses and pillows. You can bring
+                                    along sleeping bags & other stuff.</span>
+                            </div>
+                        </li> -->
                     </ul>
 
                 </div>
             </div>
             <div class="col m1"></div>
+
         </div>
 
         <!-- Registration
@@ -639,9 +647,9 @@
                 <div class="row">
                     <h2 class="center light-heading">Interested in coming over?</h2>
                     <div class="row center">
-                        <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-light" href="#">
-                            Registrations
-                            Opening Shortly!!
+                        <a class="btn waves-effect waves-teal grey darken-4 light-heading glow-light"
+                            href="./registration.html">
+                            Register Now!!
                         </a>
                     </div>
                 </div>
@@ -658,10 +666,10 @@
                         <h5 class="light-heading">Staff Co-ordinators</h5>
                         <ul>
                             <li>
-                                <b>Mrs. Shabana Tadvi</b> - shabana.tadvi@mhssce.ac.in
+                                <b>Mrs. Shabana Tadvi</b><br>shabana.tadvi@mhssce.ac.in
                             </li><br>
                             <li>
-                                <b>Mr. Mohd Ahmed Shaikh</b> - ahmed@mhssce.ac.in
+                                <b>Mrs. Zainab Pirani</b><br>zainab.pirani@mhsscoe.ac.in
                             </li>
                         </ul>
                     </div>
@@ -671,6 +679,8 @@
                             <li class="big"><b>Ankit Dubey</b> - +918446568357</li>
                             <li class="big"><b>Mushrifah Hasan</b> - +919920536165</li>
                             <li class="big"><b>Hatim Khambati</b> - +917718052267</li>
+                            <li class="big"><b>&nbsp;</b></li>
+                            <li class="big"><b>&nbsp;</b></li>
                         </ul>
                     </div>
 

@@ -1,0 +1,74 @@
+body {
+  background-color: #212121;
+}
+#main {
+  height: 100%;
+}
+
+.title-img {
+  width: 668px;
+}
+
+.form-div {
+  padding: 20px;
+  width: 668px;
+}
+
+label {
+  font-size: 2rem;
+  cursor: url(assets/cursors/cursor.cur), default !important;
+}
+
+input {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  caret-color: #64ffda;
+  cursor: url(assets/cursors/input.cur), default !important;
+}
+
+.register-btn {
+  cursor: url(assets/cursors/pointer.cur), default !important;
+  
+}
+
+.radio-btn {
+    padding: 24px !important;
+}
+
+.radio-btn label {
+  cursor: url(assets/cursors/pointer.cur), default !important;
+  /* margin-top: 30px !important; */
+  margin-left: 15px !important;
+  font-size: 2em !important;
+  color: white !important;
+}
+
+/* [type="radio"] {
+    padding: 42px !important;
+} */
+
+[type="radio"] + label:before {
+    display:inline-block !important;
+    margin:-5px !important;
+    /* padding: 4px 12px !important; */
+    background-color: #212121 !important;
+    border-color: white !important;
+    height: 30px !important;
+    width: 30px !important;
+  /* height: 30px !important;
+  width: 30px !important; */
+  /* padding: 30px; */
+}
+
+/* [type="radio"] + label:hover {
+    border-color: #64ffda !important;
+    text-shadow: #64ffda !important;
+} */
+
+[type="radio"] + label:after {
+    display:inline-block !important;
+    margin:-5px !important;
+  height: 30px !important;
+  width: 30px !important;
+  background-color: #64ffda;
+}

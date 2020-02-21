@@ -197,6 +197,10 @@ a:hover {
 }
 
 #faq-section .collapsible-header:hover {
-  cursor: url(assets/cursors/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default !important;
+}
+
+.jfForm-background-mask {
+  background: #212121 !important;
 }
 /*# sourceMappingURL=style.css.map */
