@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- useful meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=.5,minimum-scale=.5,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="An event hosted by MHSSCE to promote the programming culture">
+    <meta name="keywords" content="hackathon">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#212121">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+    <!-- title -->
+    <title>ERR_404 3.0 | Hackathon</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
+    <!--Slick for slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProgress()">
+
+
+    <!-- Loader | starts-->
+    <div id="loader" class="valign-wrapper grey darken-4">
+        <div class="row">
+            <div class="col s12">
+                <center>
+                    <div class="anim"></div>
+                    <div class="progress" style="background: #5a5a5a">
+                        <div class="indeterminate" style="color: #64ffda"></div>
+                    </div>
+                    <p class="light-heading flow-text">Loading...</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Loader | ends -->
+
+    <!-- main body | starts -->
+    <div id="main" class="grey darken-4 glove">
+
+        <!-- Nav bar section -->
+        <!-- Nav bar section -->
+        <div class="navbar--container navbar--icon sticky" id="nav--sticky">
+            <div class="navbar--title">
+                <h4>err_404 3.0</h4>
+                <img src="assets/favicon.png" alt="" style="width: 20px; height: 20px;">
+            </div>
+            <div class="nb-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav--open close sticky">
+            <div class="nav--open-icon">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+                <a href="index.html">home</a>
+                <a href="hackathons.html">hackathons</a>
+                <a href="sponsors.html">past sponsors</a>
+                <a href="index.html#rules-section">rules</a>
+                <a href="index.html#guidelines-section">guidelines</a>
+                <a href="index.html#faq-section">FAQs</a>
+            </div>
+        </div>
+
+        <div class="container-fluid section grey darken-4" style="margin-top: 0; margin-bottom: 0">
+            <div class="container center">
+                <h2 class="light-heading">Shortlisted Teams</h2>
+                <table class="light-para" style="margin-left:auto; margin-right:auto; text-align: center; width: 80%;">
+                    <thead>
+                        <tr>
+                            <th class="light-heading center"><h5>Team Name</h5></th>
+                            <th class="light-heading center"><h5>Team Leader's Name</h5></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 1-10 -->
+                        <tr>
+                            <td class="center">HashCoder</td>
+                            <td class="center">Bhanu Joshi</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Team Zero</td>
+                            <td class="center">Sohil Ayub Luhar</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Bro Code</td>
+                            <td class="center">Amurto Basu</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Runtime terror</td>
+                            <td class="center">Preet</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Impulse</td>
+                            <td class="center">Prashant Mishra</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Majestico</td>
+                            <td class="center">Rushikesh Shinde</td>
+                        </tr>
+                        <tr>
+                            <td class="center">J.A.R.V.I.S.</td>
+                            <td class="center">Ansari Shahid Raza</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Technocrats</td>
+                            <td class="center">Sadaf Abdul Qadir</td>
+                        </tr>
+                        <tr>
+                            <td class="center">coders18</td>
+                            <td class="center">Ashutosh Dhondkar</td>
+                        </tr>
+                        <tr>
+                            <td class="center">ifone</td>
+                            <td class="center">Shubham Dhumal</td>
+                        </tr>
+
+                        <!-- 11-20 -->
+                        <tr>
+                            <td class="center">TeamDotPy</td>
+                            <td class="center">Arbaz Khan</td>
+                        </tr>
+                        <tr>
+                            <td class="center">DecSec</td>
+                            <td class="center">Darshan Mistry</td>
+                        </tr>
+                        <tr>
+                            <td class="center">NUSTA CODER 2.0</td>
+                            <td class="center">Varnesh Gawde</td>
+                        </tr>
+                        <tr>
+                            <td class="center">PSP</td>
+                            <td class="center">Pranay Bagrecha</td>
+                        </tr>
+                        <tr>
+                            <td class="center">dream team</td>
+                            <td class="center">Shaikh Kaneez Fatima</td>
+                        </tr>
+                        <tr>
+                            <td class="center">The CodeFellas</td>
+                            <td class="center">Saif Kazi</td>
+                        </tr>
+                        <tr>
+                            <td class="center">TatteredReality</td>
+                            <td class="center">Abid Kapadi</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Cortex</td>
+                            <td class="center">Ram Pandey</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Inertia</td>
+                            <td class="center">Elvis Dsouza</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Nerds of a Feather</td>
+                            <td class="center">Mohammed Mehdi Patel</td>
+                        </tr>
+                        <!-- 21-30 -->
+                        <tr>
+                            <td class="center">Instacklers</td>
+                            <td class="center">Smith Gajjar</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Bug Busters</td>
+                            <td class="center">Balvinder Singh Gambhir</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Vier</td>
+                            <td class="center">Neha.S.Bhargava</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Undefined</td>
+                            <td class="center">Ehtesham Siddiqui</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Yare Yare Lulz</td>
+                            <td class="center">Lakshita Pillay</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Hack-o-holics</td>
+                            <td class="center">Heeral Dedhia</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Paradox Coder</td>
+                            <td class="center">Mustafa Patharia</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Adroits</td>
+                            <td class="center">Anshuman Rai</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Code White</td>
+                            <td class="center">Mohd Arbaaz Mohd Aslam</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Cresta</td>
+                            <td class="center">Saurabhkumar Tiwari</td>
+                        </tr>
+                        <!-- 31-40 -->
+                        <tr>
+                            <td class="center">Bit Lords</td>
+                            <td class="center">Arvind G. Mishra</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Sage</td>
+                            <td class="center">Suraj Kewat</td>
+                        </tr>
+                        <tr>
+                            <td class="center">b1nary_dem0ns</td>
+                            <td class="center">Krunal Dabhi</td>
+                        </tr>
+                        <tr>
+                            <td class="center">The DCoders</td>
+                            <td class="center">Jayesh Waghmare</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Tech Phantoms</td>
+                            <td class="center">Aliasgar Eranpurwala</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Coders.EXE</td>
+                            <td class="center">Abhishek Sharma</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Erroneous</td>
+                            <td class="center">Khan Shafiqullah</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Fatega</td>
+                            <td class="center">Rahul Kore</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Reactive Error</td>
+                            <td class="center">Abdul Rashid Reshamwala</td>
+                        </tr>
+                        <tr>
+                            <td class="center">ASDFG</td>
+                            <td class="center">Aquib Shaikh</td>
+                        </tr>
+                        <!-- 41-50 -->
+                        <tr>
+                            <td class="center">4-Mation</td>
+                            <td class="center">Rajat Jain</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Counter Logic</td>
+                            <td class="center">Haradhruchitrajit Gogoi</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Ciao Koders</td>
+                            <td class="center">Altaf Ali</td>
+                        </tr>
+                        <tr>
+                            <td class="center">&lt;SCORPION/&gt;</td>
+                            <td class="center">Krish Jain</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Diligent</td>
+                            <td class="center">Faizan Ahmed Sayyad</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Rule#34</td>
+                            <td class="center">Ved Patil</td>
+                        </tr>
+                        <tr>
+                            <td class="center">cascoder</td>
+                            <td class="center">Pushpak Chhajed</td>
+                        </tr>
+                        <tr>
+                            <td class="center">POSEIDON</td>
+                            <td class="center">Lokesh Ramdev Bohara</td>
+                        </tr>
+                        <tr>
+                            <td class="center">THE Bit-Team!</td>
+                            <td class="center">Tauseef Mushtaque Ali Shaikh</td>
+                        </tr>
+                        <tr>
+                            <td class="center">APP-ACE</td>
+                            <td class="center">Maknojiya Mohammed Rashid Ahmed</td>
+                        </tr>
+                        <!-- 51-52 -->
+                        <tr>
+                            <td class="center">Danger Noodles</td>
+                            <td class="center">Satwaj Dhavale</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Brogrammers</td>
+                            <td class="center">Khan Rehan</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="light-heading center">Congratulations!!</h4>
+
+
+        </div>
+
+
+        <!-- main body | ends -->
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <!-- Firebase JS
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script> -->
+        <!-- Scroll Reval -->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/animation_logic.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/navbar.js"></script>
+        <!--SLICK-->
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>
